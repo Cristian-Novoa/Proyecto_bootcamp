@@ -37,18 +37,26 @@ public class ControladorUsuarios {
 		
 		return "dashboard.jsp";
 	}
+	
+	@GetMapping("/registro")
+	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
+		
+		return "registro.jsp";
+	}
+	
 	@PostMapping("/registro")
 	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session) {
 		
 		servicio.registrar(nuevoUsuario, result);
 		if(result.hasErrors()) {
-			return "index.jsp";
+			return "registro.jsp";
 		}else {
 			//Guardar un usuario en la sesion 
 			session.setAttribute("usuarioEnSesion", nuevoUsuario);
 			return "redirect:/dashboard";
 		}
 	}
+	
 	@PostMapping("/login")
 	public String login(@RequestParam("email")String email, @RequestParam("password")String password, RedirectAttributes redirectAttributes,
 			HttpSession session) {
