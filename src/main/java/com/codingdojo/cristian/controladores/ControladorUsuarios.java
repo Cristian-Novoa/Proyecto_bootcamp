@@ -37,6 +37,19 @@ public class ControladorUsuarios {
 		
 		return "dashboard.jsp";
 	}
+	
+	@GetMapping("/registro")
+	public String registro(HttpSession session,
+						   @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,
+						   BindingResult result) {
+		
+		if(result.hasErrors()) {
+			return "redirect:/registro";
+		}
+		
+		return "registro.jsp";
+	}
+	
 	@PostMapping("/registro")
 	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session) {
 		
