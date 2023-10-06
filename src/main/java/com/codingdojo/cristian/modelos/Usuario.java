@@ -1,14 +1,19 @@
 package com.codingdojo.cristian.modelos;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -50,6 +55,13 @@ public class Usuario {
 	
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updatedAt;
+	
+	@OneToMany(mappedBy="autor", fetch=FetchType.LAZY)
+	private List<Mensaje> mensajes;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="ubicacion_id")
+	private Usuario habitante;
 	
 	public Usuario() {
 		
@@ -111,6 +123,22 @@ public class Usuario {
 		this.updatedAt = updatedAt;
 	}
 	
+	public List<Mensaje> getMensajes() {
+		return mensajes;
+	}
+
+	public void setMensajes(List<Mensaje> mensajes) {
+		this.mensajes = mensajes;
+	}
+
+	public Usuario getHabitante() {
+		return habitante;
+	}
+
+	public void setHabitante(Usuario habitante) {
+		this.habitante = habitante;
+	}
+
 	@PrePersist
     protected void onCreate() {
         this.createdAt = new Date();
