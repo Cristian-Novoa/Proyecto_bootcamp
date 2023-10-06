@@ -35,8 +35,8 @@ public class Usuario {
 	private String nombre;
 	
 	
-	@NotEmpty(message="el campo de email es obligatorio")
-	@Email(message="favor ingresar email valido")
+	@NotEmpty(message="Es obligatorio")
+	@Email(message="Ingresar email valido")
 	private String email;
 	
 	@NotEmpty(message="el campo de password es obligatorio")

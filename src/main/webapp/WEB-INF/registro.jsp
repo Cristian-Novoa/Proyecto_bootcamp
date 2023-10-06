@@ -24,7 +24,7 @@
                     	<form:input path="nombre" class="formInput"
                     	placeholder="Ingresa tu nombre completo" />
             		</form:label>
-            		<form:errors path="nombre" class="text-danger" />
+            		<form:errors path="nombre" class="text-error" />
         		</div>
             	<div class="input-box">
                 	<form:label path="email" class="formLabel">
@@ -32,7 +32,7 @@
                     	E-mail
                     	<form:input path="email" class="formInput" placeholder="Ingresa un email" />
                	 	</form:label>
-                <form:errors path="email" class="text-danger" />
+                <form:errors path="email" class="text-error" />
             	</div>
             <div class="input-box">
                 <form:label path="password" class="formLabel">
@@ -41,7 +41,7 @@
                     <form:password path="password" class="formInput"
                     placeholder="Ingresa un password" />
                 </form:label>
-                <form:errors path="password" class="text-danger" />
+                <form:errors path="password" class="text-error" />
             </div>
             <div class="input-box">
                 <form:label path="confirmacion" class="formLabel">
@@ -50,7 +50,7 @@
                     <form:password path="confirmacion" class="formInput"
                     placeholder="Confirmacion password" />
                 </form:label>
-                <form:errors path="confirmacion" class="text-danger" />
+                <form:errors path="confirmacion" class="text-error" />
             </div>
             <input type="submit" value="Registrarme" class="formSubmit" />
     		</form:form>
