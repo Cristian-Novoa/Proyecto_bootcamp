@@ -42,7 +42,7 @@ public class Ubicacion {
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updatedAt;
 	
-	@OneToMany(mappedBy="ubicacion", fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="direccion", fetch=FetchType.LAZY)
 	private List<Usuario> habitantes;
 	
 	public Ubicacion() {

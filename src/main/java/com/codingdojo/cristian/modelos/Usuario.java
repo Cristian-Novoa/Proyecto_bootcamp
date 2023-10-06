@@ -61,7 +61,7 @@ public class Usuario {
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="ubicacion_id")
-	private Usuario habitante;
+	private Ubicacion direccion;
 	
 	public Usuario() {
 		
@@ -131,12 +131,12 @@ public class Usuario {
 		this.mensajes = mensajes;
 	}
 
-	public Usuario getHabitante() {
-		return habitante;
+	public Ubicacion getDireccion() {
+		return direccion;
 	}
 
-	public void setHabitante(Usuario habitante) {
-		this.habitante = habitante;
+	public void setDireccion(Ubicacion direccion) {
+		this.direccion = direccion;
 	}
 
 	@PrePersist
