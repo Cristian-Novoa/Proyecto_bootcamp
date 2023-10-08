@@ -61,4 +61,8 @@ public class ServicioUsuarios {
 		}
 		
 	}
+	
+	public Usuario guardarUsuario(Usuario nuevoUsuario) {
+		return repoUser.save(nuevoUsuario);
+	}
 }
