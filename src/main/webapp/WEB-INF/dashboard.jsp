@@ -7,28 +7,178 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>US Home</title>
+<link rel ="stylesheet" href="/css/homestyle.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container font-monospace">
-		<nav class = "d-flex align-items-center justify-content-between">
-			<img alt="Icon" src="/img/92071.jpg" id = "icon">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-   				<a class="nav-link active" aria-current="page" href="#">Home</a>
- 				</li>
-  				<li class="nav-item">
-   					<a class="nav-link" href="#">Comunidad</a>
-  				</li>
-  				<li class="nav-item">
-    				<a class="nav-link" href="#">Servicio</a>
-  				</li>
-  				<li class="nav-item">
-    				<a class="nav-link disabled" aria-disabled="true">US</a>
-  				</li>
-			</ul>
-			<a href = "/logout" class = "btn btn-danger">Cerrar sesion</a>
-		</nav>
-	</div>
+	<header class="header">
+		<div class="menu container">
+			<a href="#" class="logo"><img alt="" src="images/logo.svg"></a>
+			<input type="checkbox" id="menu">
+			<label for="menu">
+				<img src="images/menu.svg" class="menu-icono" alt="">
+			</label>
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="socials-1">
+				<a href="#"><img alt="" src="images/r1.svg"></a>
+				<a href="#"><img alt="" src="images/r2.svg"></a>
+				<a href="#"><img alt="" src="images/r3.svg"></a>
+			</div>		
+		</div>
+		<div class="header-content container">
+			<div class="header-txt">
+				<h1>Proyecto sus</h1>
+				<p>	
+					loremwwef
+					
+				</p>
+				<a href="#" class="btn-1">Informacion</a>
+			</div>
+			<div class="header-img">
+				<img src="images/header.png" alt="">
+				
+			</div>
+		</div>
+		
+	</header>
+	<section class="about">
+		<div class="about-content container">
+			<img class="ab1" src="images/ab1.png" alt="">
+			<img class="ab2" src="images/ab1.png" alt="">
+			<img class="ab3" src="images/ab3.png" alt="">
+			<div class="about-img">
+				<img src="images/glass.png" alt="">
+			</div>
+			<div class="about-txt">
+				<h2>Sobre nuestro producto</h2>
+				<p>swfweffffffweeeeeefqwefwefwefwef</p>
+				<a href="#" class="btn-2">informacion</a>
+			</div>
+		
+		</div>
+		
+	</section>
+	<section class="information">
+		<div class="information-content container">
+				<img class="in1" src="images/ab1.png" alt="">
+				<img class="in2" src="images/ab1.png" alt="">
+				<img class="in3" src="images/ab2.png" alt="">
+				
+				<h2>Informacion nutricional</h2>
+				<p>qweeeeeeeeeeeeeeeeeeeeeeeq
+				qwwwwwwwwwweqweqweqwwwwe</p>
+		</div>
+	</section>
+	<main class="contact container" >
+		<div class="contact-table">
+			<span>Ingredientes</span>
+			<h3>nutricion</h3>
+			
+			<table class="ingredients">
+				<tr>
+					<th>valor</th>
+					<th>valor</th>
+					<th>valor</th>
+				
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+				<tr>
+					<td>valor</td>
+					<td>valor</td>
+					<td>valor</td>
+				</tr>
+			</table>
+		
+		
+		</div>
+		<div class="form-content">
+			<h2>suscribite a nuestras noticias</h2>
+			<form>
+				<input class="campo" type ="text" name="name" placeholder="Nombre">
+				<input class="campo" type="email" name="email" placeholder="correo">
+				<input class="btn-2" type="submit" value="enviar">
+			</form>
+			
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-links">
+				<div class="link-img">
+				<img src="images/logo.svg" alt="">
+				<div class="socials-2">
+					<a href="#"><img alt="" src="images/r1.svg"></a>
+					<a href="#"><img alt="" src="images/r2.svg"></a>
+					<a href="#"><img alt="" src="images/r3.svg"></a>
+				</div>
+				</div>
+				<div class="link">
+					<h3>lorem</h3>
+					<ul>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+					</ul>
+				</div>
+				<div class="link">
+					<h3>lorem</h3>
+					<ul>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+					</ul>
+				</div>
+				<div class="link">
+					<h3>lorem</h3>
+					<ul>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">lorem</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copy">
+				<p>dqowdmqwmdoqwmdmqwmdwqmwqmd</p>
+				
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
