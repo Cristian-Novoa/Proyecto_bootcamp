@@ -31,5 +31,6 @@
 			</div>
 		<!--</article> -->
 	</div>
+	<!-- Estoy teniendo errores con el css cabros. HELPME -->
 </body>
 </html>
