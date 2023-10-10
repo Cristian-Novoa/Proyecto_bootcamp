@@ -76,4 +76,13 @@ public class ControladorUsuarios {
 		session.removeAttribute("usuarioEnSesion");
 		return "redirect:/";
 	}
+	@GetMapping("/perfil")
+	public String usuario(HttpSession session){
+		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+		
+		if(tempUsuario == null) {
+			return "redirect:/";
+		}
+		return "perfil.jsp";
+	}
 }
