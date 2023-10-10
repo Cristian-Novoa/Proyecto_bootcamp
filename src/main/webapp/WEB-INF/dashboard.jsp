@@ -9,7 +9,7 @@
 <title>US Home</title>
 <link rel="stylesheet" href="/css/homestyle.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel ="stylesheet" href="/css/homestyle.css">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
@@ -27,13 +27,7 @@
 				<ul>
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
-
-					<li><a href="#">Productos</a></li>
-					<li><a href="#">Contacto</a></li>
-					
-
 					<li><a href="#">Comunidad</a></li>
-
 				</ul>
 			</nav>
 			<div class="socials-1">
