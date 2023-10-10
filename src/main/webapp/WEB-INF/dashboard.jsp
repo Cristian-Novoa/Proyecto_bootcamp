@@ -7,33 +7,24 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>US Home</title>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/homestyle.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel ="stylesheet" href="/css/homestyle.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 </head>
 <body>
 	<header class="header">
 		<div class="menu container">
-			<a href="#" class="logo"><img alt="" src="images/logo.svg"></a>
+			<a href="/dashboard" class="logo"><img alt="" src="images/icon_home.png"></a>
 			<input type="checkbox" id="menu">
-
 			<label for="menu">
 				<img src="img/menu.svg" class="menu-icono" alt="">
-
 			</label>
 			<nav class="navbar">
 				<ul>
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
-
-					<li><a href="#">Productos</a></li>
-					<li><a href="#">Contacto</a></li>
-					
-
 					<li><a href="#">Comunidad</a></li>
-
 				</ul>
 			</nav>
 			<div class="socials-1">
@@ -55,7 +46,10 @@
 				
 			</div>
 		</div>
+<<<<<<< HEAD
 		<p>Hola cristian</p>
+=======
+>>>>>>> branch 'master' of https://github.com/Cristian-Novoa/Proyecto_bootcamp.git
 	</header>
 	<section class="about">
 		<div class="about-content container">
@@ -189,6 +183,6 @@
 		</div>
 	</footer>
 	
-
+<!--  >>>>>>> branch 'master' of https://github.com/Cristian-Novoa/Proyecto_bootcamp.git-->
 </body>
 </html>
