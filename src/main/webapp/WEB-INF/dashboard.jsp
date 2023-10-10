@@ -11,17 +11,14 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 </head>
 <body>
 	<header class="header">
 		<div class="menu container">
-			<a href="#" class="logo"><img alt="" src="images/logo.svg"></a>
+			<a href="/dashboard" class="logo"><img alt="" src="img/icon_home.png"></a>
 			<input type="checkbox" id="menu">
-
 			<label for="menu">
 				<img src="img/menu.svg" class="menu-icono" alt="">
-
 			</label>
 			<nav class="navbar">
 				<ul>
@@ -37,7 +34,7 @@
 		</div>
 		<div class="header-content container">
 			<div class="header-txt">
-				<h1>Proyecto sus</h1>
+				<h1>Proyecto US</h1>
 				<p>	
 					loremwwef
 					
@@ -49,7 +46,6 @@
 				
 			</div>
 		</div>
-		
 	</header>
 	<section class="about">
 		<div class="about-content container">
@@ -182,7 +178,5 @@
 			</div>
 		</div>
 	</footer>
-	
-
 </body>
 </html>

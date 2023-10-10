@@ -30,13 +30,6 @@ public class ServicioMensajes {
 		return rUser.findById(id).orElse(null);
 	}
 	
-	public void autorMensaje(Long mensaje_id, Long usuario_id) {
-		Mensaje miMensaje = encontrarMensaje(mensaje_id);
-		Usuario miUsuario = encontrarUsuario(usuario_id);
-		
-		miUsuario.getMensajes().add(miMensaje);
-		rUser.save(miUsuario);
-	}
 	
 	public void borrarMensaje(Long id) {
 		rM.deleteById(id);
