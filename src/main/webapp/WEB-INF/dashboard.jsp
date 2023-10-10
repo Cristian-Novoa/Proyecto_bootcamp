@@ -46,10 +46,6 @@
 				
 			</div>
 		</div>
-<<<<<<< HEAD
-		<p>Hola cristian</p>
-=======
->>>>>>> branch 'master' of https://github.com/Cristian-Novoa/Proyecto_bootcamp.git
 	</header>
 	<section class="about">
 		<div class="about-content container">
