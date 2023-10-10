@@ -55,7 +55,7 @@
 				
 			</div>
 		</div>
-		
+		<p>Hola cristian</p>
 	</header>
 	<section class="about">
 		<div class="about-content container">
