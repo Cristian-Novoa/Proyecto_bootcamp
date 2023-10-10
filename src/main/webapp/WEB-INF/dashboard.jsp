@@ -15,7 +15,7 @@
 <body>
 	<header class="header">
 		<div class="menu container">
-			<a href="/dashboard" class="logo"><img alt="" src="images/icon_home.png"></a>
+			<a href="/dashboard" class="logo"><img alt="" src="img/icon_home.png"></a>
 			<input type="checkbox" id="menu">
 			<label for="menu">
 				<img src="img/menu.svg" class="menu-icono" alt="">
@@ -34,7 +34,7 @@
 		</div>
 		<div class="header-content container">
 			<div class="header-txt">
-				<h1>Proyecto sus</h1>
+				<h1>Proyecto US</h1>
 				<p>	
 					loremwwef
 					
@@ -182,7 +182,5 @@
 			</div>
 		</div>
 	</footer>
-	
-<!--  >>>>>>> branch 'master' of https://github.com/Cristian-Novoa/Proyecto_bootcamp.git-->
 </body>
 </html>
