@@ -15,7 +15,7 @@
 		<div class="menu container">
 			<a href="#" class="logo"><img alt="" src="images/logo.svg"></a>
 			<input type="checkbox" id="menu">
-			<label for="menu">
+			<label for="menu" >
 				<img src="images/menu.svg" class="menu-icono" alt="">
 			</label>
 			<nav class="navbar">
@@ -24,6 +24,7 @@
 					<li><a href="#">Servicios</a></li>
 					<li><a href="#">Productos</a></li>
 					<li><a href="#">Contacto</a></li>
+					
 				</ul>
 			</nav>
 			<div class="socials-1">
