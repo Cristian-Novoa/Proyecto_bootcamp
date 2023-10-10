@@ -11,14 +11,14 @@
 <link rel="stylesheet" href="/css/perfil.css">
 </head>
 <body>
-	 <div class="container">
+	<div class="container">
 		<!--<article class="profile"> -->
 			<div class="profile-image">
 				<img src="/img/usuario.png"/>
 			</div>
-			<h2 class="profile-username">Hola ${usuario.name}</h2>
+			<h2 class="profile-username">Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
 			<div class="profile-actions">
-				<button class="btn btn--primary">Follow</button>
+				<a href="/editar"><button class="btn btn--primary">Editar perfil</button></a>
 				<button class="btn btn--icon">
 					<i class="ph-export"></i>
 				</button>
