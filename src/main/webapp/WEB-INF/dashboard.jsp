@@ -36,7 +36,7 @@
 			<div class="header-txt">
 				<h1>Proyecto 	SUS</h1>
 				<p>	
-					loremwwef
+					los que no saben hacer pull
 					
 				</p>
 				<a href="#" class="btn-1">Informacion</a>
