@@ -34,7 +34,7 @@
 		</div>
 		<div class="header-content container">
 			<div class="header-txt">
-				<h1>Proyecto sus</h1>
+				<h1>Proyecto US</h1>
 				<p>	
 					loremwwef
 					
