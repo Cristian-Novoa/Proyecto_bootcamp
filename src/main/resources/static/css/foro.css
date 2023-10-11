@@ -10,10 +10,15 @@
 
 body{
     min-height: 100vh;
+
     background-image: url(/img/bg_foro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
+
+    background: url(/img/bg_foro.jpg) no-repeat;
+    background-size: cover;
+
 }
 
 .header{
