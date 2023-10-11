@@ -60,7 +60,7 @@
 
 .register-box .register-title{
 	font-size: 28px;
-    color: #fff;
+    color: black;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .login-box button:hover{
-    background: #1f73c9;
+    background: #fc8440;
     color: #fff;
 
 }
@@ -153,7 +153,7 @@
 
 .register-box input[type = "submit"]:hover{
 	
-	background: #1f73c9;
+	background: #fc8440;
     color: #fff;
 }
 	
