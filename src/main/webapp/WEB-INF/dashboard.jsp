@@ -16,36 +16,22 @@
 	<header class="header">
 		<div class="menu container">
 			<a href="/dashboard" class="logo"><img alt="" src="img/icon_home.png"></a>
-			<input type="checkbox" id="menu">
-			<label for="menu">
-				<img src="img/menu.svg" class="menu-icono" alt="">
-			</label>
+			
+			
 			<nav class="navbar">
-				<ul>
+				<ul class="menu-nav">
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
 					<li><a href="#">Comunidad</a></li>
 				</ul>
-			</nav>
-			<div class="socials-1">
+			
+				<div class="navbar">
 				<p>Bienvenido ${usuarioEnSesion.nombre}</p>
 				<a href="/perfil"><i class='bx bxs-user-circle bx-lg'></i></a>
-			</div>
+				</div>
+			</nav>
 		</div>
-		<div class="header-content container">
-			<div class="header-txt">
-				<h1>Proyecto 	SUS</h1>
-				<p>	
-					los que no saben hacer pull
-					
-				</p>
-				<a href="#" class="btn-1">Informacion</a>
-			</div>
-			<div class="header-img">
-				<img src="images/header.png" alt="">
-				
-			</div>
-		</div>
+	
 	</header>
 	<section class="about">
 		<div class="about-content container">
