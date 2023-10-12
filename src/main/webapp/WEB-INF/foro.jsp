@@ -18,11 +18,20 @@
             <a href="/perfil">Mi Perfil</a>
         </nav>
     </header>
-    <h2>Crear una Publicacion</h2>
     <div class = "contenido">
     	<div class = "formulario-publicacion">
+    		<h2>Crear una Publicacion</h2>
     		<form:form action = "/crear" method = "POST" modelAttribute = "nuevaPublicacion">
-    			<form:label path="titulo">Titulo Publicacion:</form:label>
+    			<div>
+    				<form:label path="titulo">Titulo Publicacion:</form:label>
+    				<form:input path="titulo"/>
+    				<form:errors path = "titulo"/>
+    			</div>
+    			<div>
+    				<form:label path="descripcion">Descripcion Publicacion:</form:label>
+    				<form:input path="descripcion"/>
+    				<form:errors path = "descripcion"/>
+    			</div>
     		</form:form>
     	</div>
     </div>

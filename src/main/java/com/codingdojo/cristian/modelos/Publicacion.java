@@ -22,8 +22,12 @@ public class Publicacion {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotEmpty(message = "campo vacio")
+	@NotEmpty(message = "Campo vacio")
 	private String titulo;
+	
+	@NotEmpty(message = "Campo vacio")
+	private String descripcion;
+	
 	
 	@Column(updatable=false)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
@@ -68,6 +72,14 @@ public class Publicacion {
 		this.updatedAt = updatedAt;
 	}
 	
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
 	@PrePersist
     protected void onCreate() {
         this.createdAt = new Date();
