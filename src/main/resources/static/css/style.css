@@ -12,7 +12,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: url(/img/bg-sesion.jpeg) no-repeat;
+    background: url(/img/bg_sesion.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -60,7 +60,7 @@
 
 .register-box .register-title{
 	font-size: 28px;
-    color: black;
+    color: #fff;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .login-box button:hover{
-    background: #fc8440;
+    background:#283869;
     color: #fff;
 
 }
@@ -153,7 +153,7 @@
 
 .register-box input[type = "submit"]:hover{
 	
-	background: #fc8440;
+	background: #3c5880;
     color: #fff;
 }
 	

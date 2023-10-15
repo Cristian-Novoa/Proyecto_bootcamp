@@ -26,5 +26,11 @@ public class ControladorPublicaciones {
 		
 	}
 	
+	@GetMapping("/nueva")
+	public String nueva(@ModelAttribute("nuevaPublicacion")Publicacion nuevaPublicacion,HttpSession session ){
+		
+		
+		return "nuevaPublicacion.jsp";
+	}
 	
 }
