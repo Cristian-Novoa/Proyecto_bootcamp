@@ -22,7 +22,7 @@
 				<ul class="menu-nav">
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Comunidad</a></li>
+					<li><a href="/foro">Comunidad</a></li>
 				</ul>
 			
 				<div class="navbar">
