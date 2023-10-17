@@ -71,8 +71,4 @@ public class ServicioUsuarios {
 	public Usuario encontrarUsuario(Long id) {
 		return repoUser.findById(id).orElse(null);
 	}
-	
-	public List<Usuario> allUsuariosPublicaciones(){
-		return repoUser.findAll();
-	}
 }
