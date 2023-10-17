@@ -11,10 +11,10 @@
 <title>Foro</title>
 </head>
 <body>
-	<header class="header">
+	<header class="encabezado">
         <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
-        <nav class="navbar">
-            <a href="/dashboard">Home</a>
+        <nav class="navbarra">
+            <a href="/dashboard">Inicio</a>
             <a href="">Comunidad</a>
             <a href="">Servicios</a>
             <a href="/perfil">Mi Perfil</a>
@@ -27,25 +27,22 @@
     	<div class = "btn-publicacion">
     		<a href = "/nueva">Crea tu publicacion</a>
     	</div>
-    	<div class = "content-post">
-    		<table class = "table table-sm table-striped table-bordered mt-5 ml-5 mr-5">
-    			<thead>
-    				<tr class = "text-center align-items-center">
-    					<th>Creador Publicacion</th>
-    					<th>Titulo Publicacion</th>
-    				</tr>
-    			</thead>
-    			<tbody>
-    				<c:forEach items = "${publicaciones}" var = "publicacion">
-    					<tr>
-    						<td><i class='bx bxs-user-circle'></i>${publicacion.creadorPublicacion.nombre}</td>
-    						<td><a href = "#">${publicacion.descripcion}</a></td>
-    					</tr>
-    				</c:forEach>
-    			</tbody>
-    		</table>  	
+    </div>
+    <c:forEach items = "${publicaciones}" var = "publicacion">
+    	<div class = "boxuser">
+    	<div class = "user-left">
+    		<i class='bx bx-md bxs-user-circle'></i>
+    		<p>${publicacion.creadorPublicacion.nombre}</p>
+    	</div>
+    	<div class = "user-midle">
+    		<h2><a href = "#">${publicacion.titulo}</a></h2>
+    		<p>${publicacion.descripcion}</p>
+    	</div>
+    	<div class = "seccion-comment">
+    		<div class = "comments">"89"</div>
     	</div>
     </div>
+    </c:forEach>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
