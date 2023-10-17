@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="/css/foro.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <title>Foro</title>
 </head>
 <body>
@@ -23,12 +24,26 @@
     	<div class = "midle-title">
     		<h2>Publicaciones</h2>
     	</div>
+    	<div class = "btn-publicacion">
+    		<a href = "/nueva">Crea tu publicacion</a>
+    	</div>
     	<div class = "content-post">
- 			<div class = "user-post">
- 				<i class='bx bxs-user-circle'></i>
- 				<p>${usuarioEnSesion.nombre}</p>
- 				<p><a href = "#">Titulo de la Publicacion</a></p>
- 			</div>   	
+    		<table class = "table table-sm table-striped table-bordered mt-5 ml-5 mr-5">
+    			<thead>
+    				<tr class = "text-center align-items-center">
+    					<th>Creador Publicacion</th>
+    					<th>Titulo Publicacion</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<c:forEach items = "${publicaciones}" var = "publicacion">
+    					<tr>
+    						<td><i class='bx bxs-user-circle'></i>${publicacion.creadorPublicacion.nombre}</td>
+    						<td><a href = "#">${publicacion.descripcion}</a></td>
+    					</tr>
+    				</c:forEach>
+    			</tbody>
+    		</table>  	
     	</div>
     </div>
     <footer class = "pie-pagina">

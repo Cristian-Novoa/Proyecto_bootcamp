@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .header{
     top: 0;
     left: 0;
@@ -61,18 +62,52 @@
 	text-align: center;
 	margin-top: 20px;
 	color: darkturquoise;
+	align-items: center;
 }
 
-.user-post{
-	display: flex;
-	margin: 30px 250px;
-	border: solid thin red;
-	align-items: center;
-	padding: 10px;
+.btn-publicacion{
+	border: solid thin black;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 1150px;
+	margin-top: -38px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #2e86c1;
+	
 }
+
+.btn-publicacion a{
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-publicacion:hover{
+	background-color: #1f618d;
+	transition: 0.5s ease;
+}
+
+.btn-publicacion a:hover{
+	color: #fff;
+	transition: 0.5 ease;
+}
+
+.midle-content .table{
+	width: 1000px;
+	margin-left: 250px;
+}
+
+.midle-content .table a{
+	text-decoration: none;
+}
+
+
 
 .bx{
 	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .user-post p{
@@ -93,7 +128,7 @@
 .pie-pagina{
     width: 100%;
     background-color: #2E86C1;
-    margin-top: 100%;
+    
 }
 
 .pie-pagina .grupo-1{

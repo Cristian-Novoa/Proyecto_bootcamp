@@ -56,6 +56,9 @@ public class Usuario {
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updatedAt;
 	
+	@OneToMany(mappedBy="creadorPublicacion", fetch=FetchType.LAZY)
+	private List<Publicacion> listaPublicaciones;
+	
 	@OneToMany(mappedBy="autor", fetch=FetchType.LAZY)
 	private List<Mensaje> mensajes;
 	
@@ -137,6 +140,14 @@ public class Usuario {
 
 	public void setDireccion(Ubicacion direccion) {
 		this.direccion = direccion;
+	}
+
+	public List<Publicacion> getListaPublicaciones() {
+		return listaPublicaciones;
+	}
+
+	public void setListaPublicaciones(List<Publicacion> listaPublicaciones) {
+		this.listaPublicaciones = listaPublicaciones;
 	}
 
 	@PrePersist

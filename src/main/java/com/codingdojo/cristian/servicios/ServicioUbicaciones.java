@@ -25,18 +25,5 @@ public class ServicioUbicaciones {
 		return rUbi.save(nuevaUbicacion);
 	}
 	
-	public void unirDireccionUsuario(Long ubicacion_id, Long usuario_id) {
-		Usuario miUsuario = encontrarUsuario(usuario_id);
-		Ubicacion miUbicacion = encontrarUbicacion(ubicacion_id);
-		
-		miUbicacion.getHabitantes().add(miUsuario);
-		rUbi.save(miUbicacion);
-	}
-	
-	public Usuario encontrarUsuario(Long id) {
-		return rUser.findById(id).orElse(null);
-	}
-	
-	
 	
 }

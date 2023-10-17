@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid{
+	display: flex;
+	justify-content: center;
+	background-image: url(/img/bg_sesion.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.formulario-publicacion{
+	margin-top: 100px;
+	width: 600px;
+}
+
+.formulario-publicacion input{
+	align-items: center;
+}
+
+.formulario-publicacion input[type="submit"]:hover{
+	transition: 0.5s ease;
+	background-color: darkblue;
+	color: black;
+}

@@ -1,5 +1,7 @@
 package com.codingdojo.cristian.servicios;
 
+import java.util.List;
+
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -64,5 +66,13 @@ public class ServicioUsuarios {
 	
 	public Usuario guardarUsuario(Usuario nuevoUsuario) {
 		return repoUser.save(nuevoUsuario);
+	}
+	
+	public Usuario encontrarUsuario(Long id) {
+		return repoUser.findById(id).orElse(null);
+	}
+	
+	public List<Usuario> allUsuariosPublicaciones(){
+		return repoUser.findAll();
 	}
 }
