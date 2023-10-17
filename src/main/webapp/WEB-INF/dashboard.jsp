@@ -20,7 +20,7 @@
 			
 			<nav class="navbar">
 				<ul class="menu-nav">
-					<li><a href="#">Inicio</a></li>
+					<li><a href="/dashboard">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
 					<li><a href="/foro">Comunidad</a></li>
 				</ul>

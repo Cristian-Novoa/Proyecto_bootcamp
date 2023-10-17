@@ -65,4 +65,8 @@ public class ServicioUsuarios {
 	public Usuario guardarUsuario(Usuario nuevoUsuario) {
 		return repoUser.save(nuevoUsuario);
 	}
+	
+	public Usuario encontrarUsuario(Long id) {
+		return repoUser.findById(id).orElse(null);
+	}
 }

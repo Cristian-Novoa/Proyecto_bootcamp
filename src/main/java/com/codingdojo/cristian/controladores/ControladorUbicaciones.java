@@ -3,8 +3,11 @@ package com.codingdojo.cristian.controladores;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import com.codingdojo.cristian.modelos.Ubicacion;
 import com.codingdojo.cristian.modelos.Usuario;
@@ -12,6 +15,7 @@ import com.codingdojo.cristian.servicios.ServicioUbicaciones;
 import com.codingdojo.cristian.servicios.ServicioUsuarios;
 
 import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
 
 @Controller
 public class ControladorUbicaciones {
@@ -33,5 +37,43 @@ public class ControladorUbicaciones {
 		}
 		
 		return "perfil.jsp";
+	}
+	
+	@GetMapping("/editar/{id}")
+	public String editar(@PathVariable("id") Long id,
+						 @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
+						 HttpSession session,
+						 Model model) {
+		//Revisamos que el usuario haya iniciado sesion
+		
+		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+		
+		if(tempUsuario == null) {
+			return "redirect:/";
+	}
+	
+		Usuario usuarioAEditar = servicio.encontrarUsuario(id);
+		
+		model.addAttribute(usuarioAEditar);
+		return "editar.jsp";
+	}
+	
+	@PutMapping("/actualizar")
+	public String update(HttpSession session,
+						 @Valid @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
+						 BindingResult result) {
+		//Revisamos que el usuario haya iniciado sesion
+		
+				Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+				
+				if(tempUsuario == null) {
+					return "redirect:/";
+			}
+		if(result.hasErrors()) {
+			return "editar.jsp";
+		} else {
+		//	ServicioUbicaciones.guardarUbicacion(Ubicacion nuevaUbicacion);
+			return "redirect:/perfil";
+		}
 	}
 }

@@ -19,12 +19,15 @@
     	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
     	<div class="profile-actions">
        		 <table class="table table-bordered">
-       		 <a href="/editar"><button class="btn btn--primary">Editar perfil</button></a>
+       		 <a href="/editar/${usuarioEnSesion.id}"><button class="btn btn--primary">Editar Ubicacion</button></a>
        		 	<thead>
 		             <tr>
 		               <th scope="col">Nombre</th>
 		               <th scope="col">Email</th>
 		               <th scope="col">Password</th>
+		               <th scope="col">Region</th>
+		               <th scope="col">Comuna</th>
+		               <th scope="col">Calle</th>
 		             </tr>
                 </thead>
                 <tbody>
