@@ -139,6 +139,7 @@ body{
 	box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
 	background-color: #fff;
 	align-items: center;
+	margin-bottom: 30px;
 }
 
 .boxuser .user-left{

@@ -30,18 +30,18 @@
     </div>
     <c:forEach items = "${publicaciones}" var = "publicacion">
     	<div class = "boxuser">
-    	<div class = "user-left">
-    		<i class='bx bx-md bxs-user-circle'></i>
-    		<p>${publicacion.creadorPublicacion.nombre}</p>
+    		<div class = "user-left">
+    			<i class='bx bx-md bxs-user-circle'></i>
+    			<p>${publicacion.creadorPublicacion.nombre}</p>
+    		</div>
+    		<div class = "user-midle">
+    			<h2><a href = "#">${publicacion.titulo}</a></h2>
+    			<p>${publicacion.descripcion}</p>
+    		</div>
+    		<div class = "seccion-comment">
+    			<div class = "comments">"89"</div>
+    		</div>
     	</div>
-    	<div class = "user-midle">
-    		<h2><a href = "#">${publicacion.titulo}</a></h2>
-    		<p>${publicacion.descripcion}</p>
-    	</div>
-    	<div class = "seccion-comment">
-    		<div class = "comments">"89"</div>
-    	</div>
-    </div>
     </c:forEach>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
@@ -54,7 +54,7 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    			<p></p>
     			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
     		</div>
     		<div class = "box">
