@@ -96,7 +96,7 @@ body{
 	width: 200px;
 	height: 30px;
 	line-height: 30px;
-	margin-left: 1280px;
+	margin-left: 1100px;
 	margin-top: -38px;
 	text-align: center;
 	border-radius: 20px;
@@ -212,8 +212,6 @@ body{
 .pie-pagina{
     width: 100%;
     background-color: #2E86C1;
-    margin-top: 100%;
-    
 }
 
 .pie-pagina .grupo-1{
