@@ -13,156 +13,42 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<header class="header">
-		<div class="menu container">
-			<a href="/dashboard" class="logo"><img alt="" src="img/icon_home.png"></a>
-			
-			
-			<nav class="navbar">
-				<ul class="menu-nav">
-					<li><a href="/dashboard">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="/foro">Comunidad</a></li>
-				</ul>
-			
-				<div class="navbar">
-				<p>Bienvenido ${usuarioEnSesion.nombre}</p>
-				<a href="/perfil"><i class='bx bxs-user-circle bx-lg'></i></a>
-				</div>
-			</nav>
-		</div>
+	<header class="encabezado">
+        <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
+        <nav class="navbarra">
+            <a href="/dashboard">Inicio</a>
+            <a href="">Comunidad</a>
+            <a href="">Servicios</a>
+            <a href="/perfil">Mi Perfil</a>
+        </nav>
+    </header>
+    <footer class = "pie-pagina">
+        <div class = "grupo-1">
+    	    <div class = "box">
+    			<figure>
+    				<a href = "#">
+    					<img alt="icon" src="/img/icon_home.png">
+    				</a>
+    			</figure>
+    		</div>
+    		<div class = "box">
+    			<h2>SOBRE NOSOTROS</h2>
+    			<p></p>
+    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    		</div>
+    		<div class = "box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+    	</div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 	
-	</header>
-	<section class="about">
-		<div class="about-content container">
-			<img class="ab1" src="images/ab1.png" alt="">
-			<img class="ab2" src="images/ab1.png" alt="">
-			<img class="ab3" src="images/ab3.png" alt="">
-			<div class="about-img">
-				<img src="images/glass.png" alt="">
-			</div>
-			<div class="about-txt">
-				<h2>Sobre nuestro producto</h2>
-				<p>swfweffffffweeeeeefqwefwefwefwef</p>
-				<a href="#" class="btn-2">informacion</a>
-			</div>
-		
-		</div>
-		
-	</section>
-	<section class="information">
-		<div class="information-content container">
-				<img class="in1" src="images/ab1.png" alt="">
-				<img class="in2" src="images/ab1.png" alt="">
-				<img class="in3" src="images/ab2.png" alt="">
-				
-				<h2>Informacion nutricional</h2>
-				<p>qweeeeeeeeeeeeeeeeeeeeeeeq
-				qwwwwwwwwwweqweqweqwwwwe</p>
-		</div>
-	</section>
-	<main class="contact container" >
-		<div class="contact-table">
-			<span>Ingredientes</span>
-			<h3>nutricion</h3>
-			
-			<table class="ingredients">
-				<tr>
-					<th>valor</th>
-					<th>valor</th>
-					<th>valor</th>
-				
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-				<tr>
-					<td>valor</td>
-					<td>valor</td>
-					<td>valor</td>
-				</tr>
-			</table>
-		
-		
-		</div>
-		<div class="form-content">
-			<h2>suscribite a nuestras noticias</h2>
-			<form>
-				<input class="campo" type ="text" name="name" placeholder="Nombre">
-				<input class="campo" type="email" name="email" placeholder="correo">
-				<input class="btn-2" type="submit" value="enviar">
-			</form>
-			
-		</div>
-	</main>
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-links">
-				<div class="link-img">
-				<img src="images/logo.svg" alt="">
-				<div class="socials-2">
-					<a href="#"><img alt="" src="images/r1.svg"></a>
-					<a href="#"><img alt="" src="images/r2.svg"></a>
-					<a href="#"><img alt="" src="images/r3.svg"></a>
-				</div>
-				</div>
-				<div class="link">
-					<h3>lorem</h3>
-					<ul>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-					</ul>
-				</div>
-				<div class="link">
-					<h3>lorem</h3>
-					<ul>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-					</ul>
-				</div>
-				<div class="link">
-					<h3>lorem</h3>
-					<ul>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-						<li><a href="#">lorem</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer-copy">
-				<p>dqowdmqwmdoqwmdmqwmdwqmwqmd</p>
-				
-			</div>
-		</div>
-	</footer>
 </body>
 </html>
