@@ -1,4 +1,5 @@
 @charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 *{
     margin: 0;
@@ -7,16 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 body{
 	background: url(/img/5026563.jpg) no-repeat;
 	background-size: cover;
 }
 
-
-
+/*Seccion nav*/
 
 .encabezado{
     top: 0;
@@ -79,17 +76,87 @@ body{
 	color: #000;
 }
 
+/*Seccion del contenido*/
+
+.main {
+	background-color: #fff;
+	padding: 20px;
+	margin: 30px 0px 30px 0px;
+	border-radius: 10px;
+}
+
+.main .user {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main .title{
+	text-align: center;
+}
+
+.main .description-post{
+	margin-top: 50px;
+}
+
+.main .comment{
+	border: solid thin red;
+	margin: 20px 20px 20px 20px;
+}
+
+.main .left-col, .right-col{
+	border: solid thin red;
+}
+
+.main .comment-title h2{
+	font-size: 1.3rem;
+	padding: 10px;
+	color: #000;
+	text-align: center;
+}
+
+.main .comments{
+	padding: 10px;
+}
+
+.main .comments h2{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.main .comments label{
+	margin-top: 30px;
+	color: #000;
+}
+
+.main .comments textarea{
+	margin-top: 10px;
+}
+
+.main .comments input[type="submit"]{
+	margin-top: 10px;
+	margin-left: 260px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.main .comments input[type="submit"]:hover{
+	background-color: #43E800 ;
+	transition: 0.5s ease;
+	color: #fff;
+}
+
+.main .box-comment{
+	margin-top: 30px;
+	border: solid thin red;
+}
 
 
-
-
-
+/*Seccion del footer*/
 
 .pie-pagina{
-	margin-top: 100%;
+	
     width: 100%;
     background-color: #2E86C1;
-    
 }
 
 .pie-pagina .grupo-1{
@@ -153,3 +220,5 @@ body{
 .pie-pagina .grupo-2 small{
     font-size: 1rem;
 }
+
+

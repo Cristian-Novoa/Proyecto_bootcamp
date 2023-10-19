@@ -8,8 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.codingdojo.cristian.modelos.Mensaje;
 import com.codingdojo.cristian.modelos.Publicacion;
 import com.codingdojo.cristian.modelos.Usuario;
 import com.codingdojo.cristian.servicios.ServicioPublicaciones;
@@ -79,7 +81,25 @@ public class ControladorPublicaciones {
 			
 			return "redirect:/foro";
 		}
+}	
 		
-	}
 	
+	@GetMapping("/postInfo/{id}")
+	public String infoPost(@PathVariable("id")Long publicacion_id,@ModelAttribute("nuevoMensaje")Mensaje nuevoMensaje,HttpSession session, Model model) {
+		
+		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+		
+		if(tempUsuario == null) {
+			return "redirect:/";
+		}
+		
+		Publicacion publicacion = sP.encontrarPublicacion(publicacion_id);
+		model.addAttribute("publicacion", publicacion);
+		
+		List<Publicacion> listaPost = sP.allPublicaciones();
+		model.addAttribute("publicaciones", listaPost);
+		
+		return "postInfo.jsp";
+	}
+
 }

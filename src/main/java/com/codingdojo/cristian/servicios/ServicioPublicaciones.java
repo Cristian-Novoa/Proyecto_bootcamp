@@ -20,6 +20,10 @@ public class ServicioPublicaciones {
 		return rP.save(nuevaPublicacion);
 	}
 	
+	public Publicacion encontrarPublicacion(Long id) {
+		return rP.findById(id).orElse(null);
+	}
+	
 	public List<Publicacion> allPublicaciones(){
 		return rP.findAll();
 	}
