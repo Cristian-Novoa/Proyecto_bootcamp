@@ -16,9 +16,11 @@
         <nav class="navbarra">
             <a href="/dashboard">Inicio</a>
             <a href="">Comunidad</a>
-            <a href="">Servicios</a>
             <a href="/perfil">Mi Perfil</a>
         </nav>
+        <div class = "btn-logout">
+        	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
+        </div>
     </header>
     <div class = "midle-content">
     	<div class = "midle-title">
