@@ -12,14 +12,16 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-<header class="encabezado">
+	<header class="encabezado">
         <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
         <nav class="navbarra">
             <a href="/dashboard">Inicio</a>
-            <a href="">Comunidad</a>
-            <a href="">Servicios</a>
+            <a href="/foro">Comunidad</a>
             <a href="/perfil">Mi Perfil</a>
         </nav>
+        <div class = "btn-logout">
+        	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
+        </div>
     </header>
 	<div class = "container-fluid">
 		<div class = "formulario-publicacion">
