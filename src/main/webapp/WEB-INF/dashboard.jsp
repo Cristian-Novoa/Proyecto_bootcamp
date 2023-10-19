@@ -21,6 +21,9 @@
             <a href="">Servicios</a>
             <a href="/perfil">Mi Perfil</a>
         </nav>
+        <div class = "btn-logout">
+        	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
+        </div>
     </header>
     <footer class = "pie-pagina">
         <div class = "grupo-1">

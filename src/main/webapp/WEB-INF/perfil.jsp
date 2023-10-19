@@ -12,10 +12,24 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+	<header class="encabezado">
+        <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
+        <nav class="navbarra">
+            <a href="/dashboard">Inicio</a>
+            <a href="/foro">Comunidad</a>
+            <a href="">Servicios</a>
+            <a href="/perfil">Mi Perfil</a>
+        </nav>
+        <div class = "btn-logout">
+        	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
+        </div>
+    </header>
+
 	<div class="container text-center">
     	<div class="center-content">
         	<img src="/img/usuario.png" alt="Imagen de perfil">
     	</div>
+    	
     	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
     	<div class="profile-actions">
        		 <table class="table table-bordered">
@@ -41,5 +55,34 @@
     	</div>
 	</div>
 	<script src="js/perfil.js" type="text/javascript"></script>
+	<footer class = "pie-pagina">
+        <div class = "grupo-1">
+    	    <div class = "box">
+    			<figure>
+    				<a href = "#">
+    					<img alt="icon" src="/img/icon_home.png">
+    				</a>
+    			</figure>
+    		</div>
+    		<div class = "box">
+    			<h2>SOBRE NOSOTROS</h2>
+    			<p></p>
+    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    		</div>
+    		<div class = "box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+    	</div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+	
+	
 </body>
 </html>
