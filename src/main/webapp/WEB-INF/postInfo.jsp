@@ -38,11 +38,7 @@
     				</div>
     				<div class = "box-comment">
     					<div class = "comment-title"><h2>Comentarios</h2></div>
-    					<c:forEach items = "" var = "">
-    						<div class = "user-comments">
-    						
-    						</div>
-    					</c:forEach>
+    					
     				</div>
     			</div>
     			<div class = "right-col col-6">
