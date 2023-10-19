@@ -48,6 +48,9 @@ public class Usuario {
 	@Size(min=2, message="el nombre debe tener al menos 2 caracteres")
 	private String confirmacion;
 	
+	@NotEmpty(message="ta vacio la comuna bobito")
+	private String comuna;
+	
 	
 	@Column(updatable=false)
 	@DateTimeFormat(pattern="yyyy-MM-dd")
@@ -108,6 +111,14 @@ public class Usuario {
 
 	public void setConfirmacion(String confirmacion) {
 		this.confirmacion = confirmacion;
+	}
+
+	public String getComuna() {
+		return comuna;
+	}
+
+	public void setComuna(String comuna) {
+		this.comuna = comuna;
 	}
 
 	public Date getCreatedAt() {

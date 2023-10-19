@@ -6,13 +6,11 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.codingdojo.cristian.modelos.Ubicacion;
+import com.codingdojo.cristian.modelos.Comuna;
 import com.codingdojo.cristian.modelos.Usuario;
 import com.codingdojo.cristian.servicios.ServicioUsuarios;
 
@@ -26,7 +24,8 @@ public class ControladorUsuarios {
 	private ServicioUsuarios servicio;
 	
 	@GetMapping("/")
-	public String index(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
+	public String index(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,Model model) {
+		model.addAttribute("comunas",Comuna.comunas);
 		return "index.jsp";
 	}
 	@GetMapping("/dashboard")
@@ -43,16 +42,17 @@ public class ControladorUsuarios {
 	}
 	
 	@GetMapping("/registro")
-	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
-		
+	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,Model model) {
+		model.addAttribute("comunas",Comuna.comunas);
 		return "registro.jsp";
 	}
 	
 	@PostMapping("/registro")
-	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session) {
+	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session,Model model) {
 		
 		servicio.registrar(nuevoUsuario, result);
 		if(result.hasErrors()) {
+			model.addAttribute("comunas",Comuna.comunas);
 			return "registro.jsp";
 		}else {
 			//Guardar un usuario en la sesion 

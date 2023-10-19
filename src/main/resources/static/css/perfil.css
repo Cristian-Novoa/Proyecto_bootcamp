@@ -110,12 +110,47 @@ body{
 	transition: 0.6s ease;
 	color: #000;
 }
+/*secion mid*/
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+}
+
+.boxuser{
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin-left: 250px;
+	border-radius: 10px;
+	margin-top: 30px;
+	-webkit-box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
+	-moz-box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
+	box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
+	background-color: #fff;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background  : transparent;
+    color       : #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
 
 
 
 
-
-
+/*footer*/
 .pie-pagina{
 	margin-top: 100%;
     width: 100%;

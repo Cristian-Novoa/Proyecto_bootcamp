@@ -24,6 +24,11 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
+    <section class="middle-content">
+    
+    
+    
+    </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
