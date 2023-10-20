@@ -24,9 +24,6 @@
         </div>
     </header>
     <main class = "main">
-    	<div class = "user">
-    		<p>Creador Publicacion: ${publicacion.creadorPublicacion.nombre}</p>
-    	</div>
     	<div class = "title">
     		<h2>${publicacion.titulo}</h2>
     	</div>
@@ -34,7 +31,15 @@
     		<div class = "row">
     			<div class = "left-col col-6">
     				<div class = "description-post">
-    					<p>${publicacion.descripcion}</p>
+    					<div class = "icon-user">
+    						<i class='bx bx-md bxs-user-circle'></i>
+    					</div>
+    					<div class = "autor-name">
+    						${publicacion.creadorPublicacion.nombre}
+    						<div class = "autor-description">
+    							<p>${publicacion.descripcion}</p>
+    						</div>
+    					</div>
     				</div>
     				<div class = "comment-title"><h2>Comentarios</h2></div>
     				<div class = "box-comment">

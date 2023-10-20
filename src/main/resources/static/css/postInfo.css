@@ -1,6 +1,5 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 
 *{
@@ -95,11 +94,13 @@ body{
 
 .main .title{
 	text-align: center;
-	font-family: 'Gabarito', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .main .description-post{
 	margin-top: 50px;
+	padding: 10px;
 }
 
 .main .comment{
@@ -107,14 +108,15 @@ body{
 }
 
 .main .comment-title h2{
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	padding: 10px;
 	color: #000;
 	text-align: center;
 }
 
 .main .comments{
-	background-color: #1f618d;
+	background-color: #fff;
+	margin-top: 50px;
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.75);
@@ -122,10 +124,26 @@ body{
 	-moz-box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.75);
 }
 
+.main .left-col{
+	margin-top: 50px;
+	border: solid thin #000;
+	box-shadow: -8px 10px 29px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -8px 10px 29px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -8px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+.main .autor-description{
+	font-weight: bold;
+}
+
 .main .comments h2{
 	font-size: 1.5rem;
 	text-align: center;
 	color: #000;
+}
+
+.main .description-post {
+	font-size: 1.5rem;
 }
 
 .main .comments label{
@@ -152,20 +170,25 @@ body{
 
 .main .box-comment{
 	margin-top: 30px;
-	border: solid thin red;
 	align-items: center;
+	padding: 10px;
+	border-radius: 10px
 }
 
 .main .box-comment .msg-user{
 	display: flex;
-	margin-top: 10px;
 	padding: 10px;
 	align-content: center;
+	background-color: #fff;
+}
+
+.main .description-post{
+	display: flex;
 }
 
 .main .box-comment .msg-user p{
 	padding: 5px;
-	border: solid thin green;
+	color: #000;
 	font-weight: bold;
 }
 
