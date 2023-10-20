@@ -29,7 +29,7 @@
     	<div class="slider-box">
     		<ul>
     			<li>
-    				<img src="img/reconocer.png">
+    				<img src="img/s1.jpg">
     				<div class="texto">
     					<h2>img1efefe</h2>
     					<p> insert parrafofeefefefefefef</p>
