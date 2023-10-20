@@ -79,11 +79,61 @@ body{
 	color: #000;
 }
 
+.about-us {
+	width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us h2 {
+	margin: revert-layer;
+	margin-left: 550px;
+}
+.about-us-2 {
+	display: flex;
+}
+
+.about-us-2 img {
+	margin-left: 50px;
+
+}
+
+.about-us p {
+	margin: revert-layer;
+	font-size:larger;
+	margin-top: 75px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 15px;
+}
+
+.about-us a {
+    border: solid thin black;
+    width: 200px;
+    height: 30px;
+    line-height: 30px; 
+    margin-left: 200px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #2e86c1;
+    font-size: 20px;
+    color: #efefef;
+    text-decoration: none;
+    padding: 10px;
+}
 
 
+bio-bio-1 {
+	display: flex;
+	justify-content: center;
+}
 
-
-
+.bio-bio-2 p {
+	margin: 20px;
+	padding: 20px;
+}
 
 .pie-pagina{
 	margin-top: 100%;

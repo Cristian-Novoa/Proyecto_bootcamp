@@ -25,8 +25,31 @@
         </div>
     </header>
     <section class="middle-content">
-    
-    
+    	<div class="about-us">
+    		<h2>Nuestro propósito para ustedes</h2>
+    		<div class="about-us-2">
+    			<img alt= "icono" src="img/icon_home.png">
+    			<div class="about-us-muro">
+    			<p>Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal
+    		    	y prevenir la delincuencia. Somos más que una empresa de seguridad; somos una comunidad comprometida con 
+    		    	la tranquilidad de tu vecindario.</p> 
+    			<p>Te invitamos a entrar a nuestro muro de comentarios para mantener informado a tus vecinos.</p>
+    			<a href="/foro">Comunidad</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="bio-bio-1">
+    		<h2>Conoce mas sobre tu región</h2>
+    		<div class="bio-bio-2">
+    			<p>La Octava Región de Chile es la Región del Biobío, que se divide en las provincias de Ñuble, Bío Bío, Concepción y Arauco.
+    			   Su capital es Concepción, que es una de las ciudades más importantes de Chile, gracias a su rica herencia en cultura, 
+    			   con influencias indígenas, españolas y europeas. La artesanía , la gastronomía y La música folklórica junto
+    			   a la grandes bandas que se formaron en Concepcion entregan una basta variedad de interes por la Región.<p>
+    			<img alt= "icono" src="img/8° región.png">
+    		</div>
+    	</div>
+    		
+    	
     
     </section>
     <footer class = "pie-pagina">
