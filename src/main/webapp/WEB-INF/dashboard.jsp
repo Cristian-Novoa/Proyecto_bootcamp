@@ -17,7 +17,7 @@
         <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
         <nav class="navbarra">
             <a href="/dashboard">Inicio</a>
-            <a href="/foro">Comunidadd</a>
+            <a href="/foro">Comunidad</a>
             <a href="/perfil">Mi Perfil</a>
         </nav>
         <div class = "btn-logout">
@@ -25,6 +25,40 @@
         </div>
     </header>
     <section class="middle-content">
+    	<div class="slider-box">
+    		<ul>
+    			<li>
+    				<img src="img/s1.jpg">
+    				<div class="texto">
+    					<h2>img1efefe</h2>
+    					<p> insert parrafofeefefefefefef</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s2.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s3.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s4.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
+    </section>
+    <section class="sub-content">
     	<div class="about-us">
     		<h2>Nuestro propósito para ustedes</h2>
     		<div class="about-us-2">
