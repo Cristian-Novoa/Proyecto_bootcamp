@@ -25,51 +25,13 @@
         </div>
     </header>
     <section class="middle-content">
-
-    	<div class="slider-box">
-    		<ul>
-    			<li>
-    				<img src="img/reconocer.png">
-    				<div class="texto">
-    					<h2>img1efefe</h2>
-    					<p> insert parrafofeefefefefefef</p>
-    				</div>
-    			</li>
-    			<li>
-    				<img src="img/s2.jpg">
-    				<div class="texto">
-    					<h2>img2</h2>
-    					<p> insert parrafo</p>
-    				</div>
-    			</li>
-    			<li>
-    				<img src="img/s3.jpg">
-    				<div class="texto">
-    					<h2>img2</h2>
-    					<p> insert parrafo</p>
-    				</div>
-    			</li>
-    			<li>
-    				<img src="img/s4.jpg">
-    				<div class="texto">
-    					<h2>img2</h2>
-    					<p> insert parrafo</p>
-    				</div>
-    			</li>
-    		</ul>
-    	</div>
-    
-    
-    </section>
-    <section class="sub-content">
-
     	<div class="about-us">
-    		<h2>Nuestro propï¿½sito para ustedes</h2>
+    		<h2>Nuestro propósito para ustedes</h2>
     		<div class="about-us-2">
     			<img alt= "icono" src="img/icon_home.png">
     			<div class="about-us-muro">
-    			<p>Nuestra misiï¿½n es unir comunidades, promover seguridad y comunicaciï¿½n, fortalecer la colaboraciï¿½n vecinal
-    		    	y prevenir la delincuencia. Somos mï¿½s que una empresa de seguridad; somos una comunidad comprometida con 
+    			<p>Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal
+    		    	y prevenir la delincuencia. Somos más que una empresa de seguridad; somos una comunidad comprometida con 
     		    	la tranquilidad de tu vecindario.</p> 
     			<p>Te invitamos a entrar a nuestro muro de comentarios para mantener informado a tus vecinos.</p>
     			<a href="/foro">Comunidad</a>
@@ -77,19 +39,17 @@
     		</div>
     	</div>
     	<div class="bio-bio-1">
-    		<h2>Conoce mas sobre tu regiï¿½n</h2>
+    		<h2>Conoce mas sobre tu región</h2>
     		<div class="bio-bio-2">
-    			<p>La Octava Regiï¿½n de Chile es la Regiï¿½n del Biobï¿½o, que se divide en las provincias de ï¿½uble, Bï¿½o Bï¿½o, Concepciï¿½n y Arauco.
-    			   Su capital es Concepciï¿½n, que es una de las ciudades mï¿½s importantes de Chile, gracias a su rica herencia en cultura, 
-    			   con influencias indï¿½genas, espaï¿½olas y europeas. La artesanï¿½a , la gastronomï¿½a y La mï¿½sica folklï¿½rica junto
-    			   a la grandes bandas que se formaron en Concepcion entregan una basta variedad de interes por la Regiï¿½n.<p>
-    			<img alt= "icono" src="img/8ï¿½ regiï¿½n.png">
+    			<p>La Octava Región de Chile es la Región del Biobío, que se divide en las provincias de Ñuble, Bío Bío, Concepción y Arauco.
+    			   Su capital es Concepción, que es una de las ciudades más importantes de Chile, gracias a su rica herencia en cultura, 
+    			   con influencias indígenas, españolas y europeas. La artesanía , la gastronomía y La música folklórica junto
+    			   a la grandes bandas que se formaron en Concepcion entregan una basta variedad de interes por la Región.<p>
+    			<img alt= "icono" src="img/8° región.png">
     		</div>
     	</div>
     		
     	
-    
-
     </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
