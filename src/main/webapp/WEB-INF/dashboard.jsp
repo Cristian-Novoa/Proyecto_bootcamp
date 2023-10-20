@@ -25,6 +25,7 @@
         </div>
     </header>
     <section class="middle-content">
+
     	<div class="slider-box">
     		<ul>
     			<li>
@@ -61,6 +62,34 @@
     
     </section>
     <section class="sub-content">
+
+    	<div class="about-us">
+    		<h2>Nuestro prop�sito para ustedes</h2>
+    		<div class="about-us-2">
+    			<img alt= "icono" src="img/icon_home.png">
+    			<div class="about-us-muro">
+    			<p>Nuestra misi�n es unir comunidades, promover seguridad y comunicaci�n, fortalecer la colaboraci�n vecinal
+    		    	y prevenir la delincuencia. Somos m�s que una empresa de seguridad; somos una comunidad comprometida con 
+    		    	la tranquilidad de tu vecindario.</p> 
+    			<p>Te invitamos a entrar a nuestro muro de comentarios para mantener informado a tus vecinos.</p>
+    			<a href="/foro">Comunidad</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="bio-bio-1">
+    		<h2>Conoce mas sobre tu regi�n</h2>
+    		<div class="bio-bio-2">
+    			<p>La Octava Regi�n de Chile es la Regi�n del Biob�o, que se divide en las provincias de �uble, B�o B�o, Concepci�n y Arauco.
+    			   Su capital es Concepci�n, que es una de las ciudades m�s importantes de Chile, gracias a su rica herencia en cultura, 
+    			   con influencias ind�genas, espa�olas y europeas. La artesan�a , la gastronom�a y La m�sica folkl�rica junto
+    			   a la grandes bandas que se formaron en Concepcion entregan una basta variedad de interes por la Regi�n.<p>
+    			<img alt= "icono" src="img/8� regi�n.png">
+    		</div>
+    	</div>
+    		
+    	
+    
+
     </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
