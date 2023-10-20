@@ -1,5 +1,7 @@
 package com.codingdojo.cristian.controladores;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.codingdojo.cristian.modelos.Mensaje;
 import com.codingdojo.cristian.modelos.Publicacion;
 import com.codingdojo.cristian.modelos.Usuario;
+import com.codingdojo.cristian.servicios.ServicioMensajes;
 import com.codingdojo.cristian.servicios.ServicioPublicaciones;
 import com.codingdojo.cristian.servicios.ServicioUsuarios;
 
@@ -29,6 +32,10 @@ public class ControladorPublicaciones {
 	
 	@Autowired
 	private ServicioPublicaciones sP;
+	
+	
+	@Autowired
+	private ServicioMensajes sM;
 
 	@GetMapping("/foro")
 	public String foro(@ModelAttribute("nuevaPublicacion")Publicacion nuevaPublicacion,HttpSession session, Model model) {
@@ -38,6 +45,7 @@ public class ControladorPublicaciones {
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
+		
 		
 		List<Publicacion> listaPublicaciones = sP.allPublicaciones();
 		model.addAttribute("publicaciones", listaPublicaciones);
@@ -100,6 +108,27 @@ public class ControladorPublicaciones {
 		model.addAttribute("publicaciones", listaPost);
 		
 		return "postInfo.jsp";
+	}
+	
+	@PostMapping("/crearmensaje")
+	public String crearmensaje(@Valid @ModelAttribute("nuevoMensaje")Mensaje mensaje, BindingResult result, HttpSession session, 
+			Model model) {
+		
+		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+		
+		if(tempUsuario == null) {
+			return "redirect:/";
+		}
+		
+		if(result.hasErrors()) {
+			model.addAttribute("publicacion", mensaje.getPublicacion());
+			return "postInfo.jsp";
+		}else {
+			
+			sM.guardarMensaje(mensaje);
+			return "redirect:/postInfo/"+mensaje.getPublicacion().getId();
+		}
+		
 	}
 
 }

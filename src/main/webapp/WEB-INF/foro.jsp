@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +42,15 @@
     			<p>${publicacion.descripcion}</p>
     		</div>
     		<div class = "seccion-comment">
-    			<div class = "comments">"89"</div>
+    			<div class = "comments">
+    				<i class='bx bxs-message-dots'></i>
+    				${publicacion.mensajesPublicacion.size()}
+    			</div>
+    			<div class = "date">
+    				<p><fmt:parseDate pattern = "yyyy-MM-dd" value = "${publicacion.createdAt}" var = "fechaFormateada"/>
+    					<fmt:formatDate value = "${fechaFormateada}" pattern = "EEEE, dd-MM, yyyy"/>
+    				</p>
+    			</div>
     		</div>
     	</div>
     </c:forEach>

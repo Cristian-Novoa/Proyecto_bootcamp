@@ -16,6 +16,7 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="mensajes")
@@ -26,6 +27,7 @@ public class Mensaje {
 	private Long id;
 	
 	@NotEmpty(message="El campo de mensaje es obligatorio")
+	@Size(max = 255, message = "maximo 255 caracteres")
 	private String contenido;
 	
 	@Column(updatable=false)
@@ -39,6 +41,10 @@ public class Mensaje {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="usuario_id")
 	private Usuario autor;
+	
+	@ManyToOne(fetch =FetchType.LAZY)
+	@JoinColumn(name = "publicacion_id")
+	private Publicacion publicacion;
 	
 	public Mensaje() {
 	}
@@ -75,6 +81,22 @@ public class Mensaje {
 		this.updatedAt = updatedAt;
 	}
 	
+	public Usuario getAutor() {
+		return autor;
+	}
+
+	public void setAutor(Usuario autor) {
+		this.autor = autor;
+	}
+
+	public Publicacion getPublicacion() {
+		return publicacion;
+	}
+
+	public void setPublicacion(Publicacion publicacion) {
+		this.publicacion = publicacion;
+	}
+
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();

@@ -184,7 +184,7 @@ body{
 }
 
 .boxuser .user-midle{
-	width: 70%;
+	width: 50%;
 	padding: 10px;
 }
 
@@ -204,9 +204,17 @@ body{
 	font-size:1rem;
 }
 
+.boxuser .seccion-comment .comments{
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
 
 .boxuser .seccion-comment{
-	width: 15%;
+	width: 18%;
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 
