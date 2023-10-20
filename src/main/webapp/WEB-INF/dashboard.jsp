@@ -25,9 +25,42 @@
         </div>
     </header>
     <section class="middle-content">
+    	<div class="slider-box">
+    		<ul>
+    			<li>
+    				<img src="img/reconocer.png">
+    				<div class="texto">
+    					<h2>img1efefe</h2>
+    					<p> insert parrafofeefefefefefef</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s2.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s3.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    			<li>
+    				<img src="img/s4.jpg">
+    				<div class="texto">
+    					<h2>img2</h2>
+    					<p> insert parrafo</p>
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
     
     
-    
+    </section>
+    <section class="sub-content">
     </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
