@@ -25,7 +25,7 @@
     </header>
     <main class = "main">
     	<div class = "user">
-    		<p>Creador ${publicacion.creadorPublicacion.nombre}</p>
+    		<p>Creador Publicacion: ${publicacion.creadorPublicacion.nombre}</p>
     	</div>
     	<div class = "title">
     		<h2>${publicacion.titulo}</h2>
@@ -36,21 +36,37 @@
     				<div class = "description-post">
     					<p>${publicacion.descripcion}</p>
     				</div>
+    				<div class = "comment-title"><h2>Comentarios</h2></div>
     				<div class = "box-comment">
-    					<div class = "comment-title"><h2>Comentarios</h2></div>
-    					
+    					<c:forEach items = "${publicacion.mensajesPublicacion}" var = "msg">
+    						<div class = "msg-user">
+    							<div class = "icon-user">
+    								<i class='bx bx-md bxs-user-circle'></i>
+    							</div>
+    							<div class = "autor-name">
+    								${msg.autor.nombre}
+    								<div class = "autor-comment">
+    									<p>
+    										${msg.contenido} 
+    									</p>
+    								</div>
+    							</div>
+    						</div>
+    					</c:forEach>
     				</div>
     			</div>
     			<div class = "right-col col-6">
     				<div class = "comment">
     					<div class = "comments">
     						<h2>Puedes publicar un comentario aqui</h2>
-    						<form:form action = "/new" method = "POST" modelAttribute = "nuevoMensaje">
+    						<form:form action = "/crearmensaje" method = "POST" modelAttribute = "nuevoMensaje">
     							<div>
-    								<form:label path = "">Ingresa un comentario</form:label>
-    								<form:textarea path = "" class = "form-control"/>
-    								<form:errors path = "" class = "text-danger"/>
+    								<form:label path = "contenido">Ingresa un comentario</form:label>
+    								<form:textarea path = "contenido" class = "form-control"/>
+    								<form:errors path = "contenido" class = "text-light-emphasis"/>
     							</div>
+    							<form:hidden path = "autor" value = "${usuarioEnSesion.id}"/>
+								<form:hidden path = "publicacion" value = "${publicacion.id}"/>
     							<input type = "submit" value = "Comentar" class = "btn btn-info"/>
     						</form:form>
     					</div>

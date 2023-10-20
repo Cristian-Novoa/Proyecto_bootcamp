@@ -44,7 +44,10 @@ public class ControladorUsuarios {
 	
 	@GetMapping("/registro")
 	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,Model model) {
+		
+		
 		model.addAttribute("comunas",Comuna.comunas);
+		
 		return "registro.jsp";
 	}
 	

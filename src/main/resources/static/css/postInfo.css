@@ -1,5 +1,7 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
 
 *{
     margin: 0;
@@ -88,10 +90,12 @@ body{
 .main .user {
 	display: flex;
 	justify-content: flex-end;
+	font-weight: bold;
 }
 
 .main .title{
 	text-align: center;
+	font-family: 'Gabarito', sans-serif;
 }
 
 .main .description-post{
@@ -99,12 +103,7 @@ body{
 }
 
 .main .comment{
-	border: solid thin red;
 	margin: 20px 20px 20px 20px;
-}
-
-.main .left-col, .right-col{
-	border: solid thin red;
 }
 
 .main .comment-title h2{
@@ -115,12 +114,18 @@ body{
 }
 
 .main .comments{
+	background-color: #1f618d;
 	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.75);
 }
 
 .main .comments h2{
 	font-size: 1.5rem;
 	text-align: center;
+	color: #000;
 }
 
 .main .comments label{
@@ -140,7 +145,7 @@ body{
 }
 
 .main .comments input[type="submit"]:hover{
-	background-color: #43E800 ;
+	background-color: #4C78F7;
 	transition: 0.5s ease;
 	color: #fff;
 }
@@ -148,6 +153,24 @@ body{
 .main .box-comment{
 	margin-top: 30px;
 	border: solid thin red;
+	align-items: center;
+}
+
+.main .box-comment .msg-user{
+	display: flex;
+	margin-top: 10px;
+	padding: 10px;
+	align-content: center;
+}
+
+.main .box-comment .msg-user p{
+	padding: 5px;
+	border: solid thin green;
+	font-weight: bold;
+}
+
+.main .box-comment .autor-name{
+	margin-left: 10px;
 }
 
 
