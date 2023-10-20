@@ -82,17 +82,10 @@ public class ControladorUsuarios {
 		return "redirect:/";
 	}
 	
-	@PutMapping("/actualizarr")
-	public String update(@Valid @ModelAttribute("usuario") Usuario usuario, BindingResult result) {
-	if(result.hasErrors()) {
-		return "perfil.jsp";
-	}
-	
-	return "redirect:/";
 	
 }
 	
 	
 	
 	
-}
+
