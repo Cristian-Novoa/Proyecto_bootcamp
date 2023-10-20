@@ -25,10 +25,11 @@ public class ControladorUsuarios {
 	private ServicioUsuarios servicio;
 	
 	@GetMapping("/")
-	public String index(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,Model model) {
-		model.addAttribute("comunas",Comuna.comunas);
+	public String index(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
+		
 		return "index.jsp";
 	}
+	
 	@GetMapping("/dashboard")
 	public String dashboard(HttpSession session) {
 		//Revisamos que el usuario haya iniciado sesion
@@ -43,20 +44,20 @@ public class ControladorUsuarios {
 	}
 	
 	@GetMapping("/registro")
-	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario,Model model) {
+	public String registro(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
 		
 		
-		model.addAttribute("comunas",Comuna.comunas);
+		
 		
 		return "registro.jsp";
 	}
 	
 	@PostMapping("/registro")
-	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session,Model model) {
+	public String registro(@Valid @ModelAttribute("nuevoUsuario")Usuario nuevoUsuario, BindingResult result, HttpSession session) {
 		
 		servicio.registrar(nuevoUsuario, result);
 		if(result.hasErrors()) {
-			model.addAttribute("comunas",Comuna.comunas);
+			
 			return "registro.jsp";
 		}else {
 			//Guardar un usuario en la sesion 

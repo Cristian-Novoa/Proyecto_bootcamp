@@ -25,13 +25,13 @@ public class Ubicacion {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotEmpty
+	@NotEmpty(message = "El campo esta vacio")
 	private String region;
 	
-	@NotEmpty
+	@NotEmpty(message = "El campo esta vacio")
 	private String comuna;
 	
-	@NotEmpty
+	@NotEmpty(message = "El campo esta vacio")
 	private String calle;
 	
 	@Column(updatable=false)

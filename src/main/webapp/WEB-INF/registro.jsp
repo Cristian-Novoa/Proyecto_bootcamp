@@ -52,16 +52,10 @@
                 </form:label>
                 <form:errors path="confirmacion" class="text-error" />
             </div>
-            <div class="input-box">
-				<form:label path="comuna">comuna</form:label>
-				<form:select path="comuna" class="form-select">
-					<c:forEach items="${comunas}" var="comuna">
-						<form:option value="${comuna}">${comuna}</form:option>
-					</c:forEach>
-				</form:select>
-			</div>
-           
-            <input type="submit" value="Registrarme" class="formSubmit" />
+            <input type="submit" value="Registrarme" class="formSubmit"/>
+            <div class="register-link">
+                    <a href="/">Iniciar sesion</a>
+            </div>
     		</form:form>
         </div>
     </div>

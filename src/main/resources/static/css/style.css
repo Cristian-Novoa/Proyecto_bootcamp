@@ -165,6 +165,14 @@
     margin: 20px 0 10px;
 }
 
+.register-box .register-link{
+	font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+
 .register-box .form:errors{
 	color: red;
 	font-size: 10px;
