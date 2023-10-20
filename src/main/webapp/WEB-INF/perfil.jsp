@@ -23,53 +23,8 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
-	<section>
-        <div class="boxuser">
-                <div class="col-md-9">
-                    <div class="tab-content">
-                        <div class="tab-pane fade active show" id="account-general">
-                            <div class="card-body media align-items-center">
-                            <h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
-                                <img src="img/4epgnms.jpg" 
-                                    class="d-block ui-w-80">
-
-                                <div class = "btn-logout">
-                                <a href="/logout" class = "btn btn-danger">Editar foto de perfil</a>
-                                    </div>
-
-
-                            </div>
-                            <hr class="border-light m-0">
-                            <div class="card-body">
-
-                                <div class="form-group">
-                                    <label class="form-label">Name</label>
-                                    <input type="text" class="form-control" value="${usuarioEnSesion.nombre}">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">E-mail</label>
-                                    <input type="text" class="form-control mb-1" value="${usuarioEnSesion.email}">
-
-</div>
-                                <div class="form-group">
-                                    <label class="form-label">Comuna</label>
-                                    <input type="text" class="form-control" value="${usuarioEnSesion.comuna}">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-        </div>
-
-        <div class="text-right mt-3">
-            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
-            <button type="button" class="btn btn-default">Cancel</button>
-        </div>
-
-    </section>
+	
+    <section class="boxuser">
 	<div class="container text-center">
     	<div class="center-content">
         	<img src="/img/usuario.png" alt="Imagen de perfil">
@@ -83,7 +38,6 @@
 		             <tr>
 		               <th scope="col">Nombre</th>
 		               <th scope="col">Email</th>
-		               <th scope="col">Password</th>
 		               <th scope="col">Region</th>
 		               <th scope="col">Comuna</th>
 		               <th scope="col">Calle</th>
@@ -93,12 +47,12 @@
 	                <tr>
 	                    <td>${usuarioEnSesion.nombre}</td>
 	                    <td>${usuarioEnSesion.email}</td>
-	                    <td id="passwordField">${usuarioEnSesion.password}</td>
 	                </tr>
                 </tbody>
             </table>
     	</div>
 	</div>
+	</section>
 	<script src="js/perfil.js" type="text/javascript"></script>
 	<footer class = "pie-pagina">
         <div class = "grupo-1">
