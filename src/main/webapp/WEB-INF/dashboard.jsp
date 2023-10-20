@@ -17,7 +17,7 @@
         <a href="/dashboard" class = "logo"><img alt="icono" src="img/icon_home.png"></a>
         <nav class="navbarra">
             <a href="/dashboard">Inicio</a>
-            <a href="/foro">Comunidad</a>
+            <a href="/foro">Comunidadd</a>
             <a href="/perfil">Mi Perfil</a>
         </nav>
         <div class = "btn-logout">
