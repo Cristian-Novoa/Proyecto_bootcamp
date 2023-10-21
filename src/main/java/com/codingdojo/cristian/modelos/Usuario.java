@@ -12,8 +12,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -62,9 +62,9 @@ public class Usuario {
 	@OneToMany(mappedBy="autor", fetch=FetchType.LAZY)
 	private List<Mensaje> mensajes;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="ubicacion_id")
-	private Ubicacion direccion;
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ubicacion_id")
+	private Ubicacion ubicacionUsuario;
 	
 	public Usuario() {
 		
@@ -134,20 +134,20 @@ public class Usuario {
 		this.mensajes = mensajes;
 	}
 
-	public Ubicacion getDireccion() {
-		return direccion;
-	}
-
-	public void setDireccion(Ubicacion direccion) {
-		this.direccion = direccion;
-	}
-
 	public List<Publicacion> getListaPublicaciones() {
 		return listaPublicaciones;
 	}
 
 	public void setListaPublicaciones(List<Publicacion> listaPublicaciones) {
 		this.listaPublicaciones = listaPublicaciones;
+	}
+
+	public Ubicacion getUbicacionUsuario() {
+		return ubicacionUsuario;
+	}
+
+	public void setUbicacionUsuario(Ubicacion ubicacionUsuario) {
+		this.ubicacionUsuario = ubicacionUsuario;
 	}
 
 	@PrePersist

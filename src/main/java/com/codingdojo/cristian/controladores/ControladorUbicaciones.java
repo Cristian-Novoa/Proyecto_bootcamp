@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
+import com.codingdojo.cristian.modelos.Comuna;
+import com.codingdojo.cristian.modelos.Region;
 import com.codingdojo.cristian.modelos.Ubicacion;
 import com.codingdojo.cristian.modelos.Usuario;
 import com.codingdojo.cristian.servicios.ServicioUbicaciones;
@@ -39,6 +41,23 @@ public class ControladorUbicaciones {
 		return "perfil.jsp";
 	}
 	
+	
+	@GetMapping("/ubicacion")
+	public String ubicacion(@ModelAttribute("nuevaUbicacion")Ubicacion nuevaUbicacion, Model model, HttpSession session) {
+		
+		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
+		
+		if(tempUsuario == null) {
+			return "redirect:/";
+		}
+		
+		model.addAttribute("regiones", Region.region);
+		model.addAttribute("comunas", Comuna.comunas);
+		
+		return "ubicacion.jsp";
+		
+	}
+	
 	@GetMapping("/editar/{id}")
 	public String editar(@PathVariable("id") Long id,
 						 @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
@@ -62,7 +81,7 @@ public class ControladorUbicaciones {
 	public String update(HttpSession session,
 						 @Valid @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
 						 BindingResult result) {
-		//Revisamos que el usuario haya iniciado sesion
+		
 		
 				Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
 				
@@ -72,7 +91,7 @@ public class ControladorUbicaciones {
 		if(result.hasErrors()) {
 			return "editar.jsp";
 		} else {
-		//	ServicioUbicaciones.guardarUbicacion(Ubicacion nuevaUbicacion);
+			
 			return "redirect:/perfil";
 		}
 	}

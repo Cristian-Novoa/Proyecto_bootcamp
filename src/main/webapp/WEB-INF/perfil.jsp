@@ -23,37 +23,40 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
-	
     <section class="boxuser">
-	<div class="container text-center">
-    	<div class="center-content">
-        	<img src="/img/usuario.png" alt="Imagen de perfil">
-    	</div>
-    	
-    	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
-    	<div class="profile-actions">
-       		 <table class="table table-bordered">
-       		 <a href="/editar/${usuarioEnSesion.id}"><button class="btn btn--primary">Editar Ubicacion</button></a>
-       		 	<thead>
-		             <tr>
-		               <th scope="col">Nombre</th>
-		               <th scope="col">Email</th>
-		               <th scope="col">Region</th>
-		               <th scope="col">Comuna</th>
-		               <th scope="col">Calle</th>
-		             </tr>
-                </thead>
-                <tbody>
-	                <tr>
-	                    <td>${usuarioEnSesion.nombre}</td>
-	                    <td>${usuarioEnSesion.email}</td>
-	                </tr>
-                </tbody>
-            </table>
-    	</div>
-	</div>
+   		<h2>Perfil de Usuario</h2>
+		<div class="container text-center">
+    		<div class="center-content">
+        		<img src="/img/usuario.png" alt="Imagen de perfil">
+    		</div>
+    		<div class = "information">
+    			<h2>Informacion</h2>
+    			<div class = "user-information">
+    				<p>Nombre de usuario</p>
+    				<p>${usuarioEnSesion.nombre}</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Correo electronico</p>
+    				<p>${usuarioEnSesion.email}</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Region</p>
+    				<p>Region del usuario</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Comuna</p>
+    				<p>Comuna del usuario</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Calle</p>
+    				<p>Calle del usuario</p>
+    			</div>
+    			<div class = "user-btn">
+    				<a href = "/ubicacion" class = "btn btn-info">Agregar Ubicacion</a>
+    			</div>
+    		</div>
+		</div>
 	</section>
-	<script src="js/perfil.js" type="text/javascript"></script>
 	<footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
@@ -65,15 +68,18 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p></p>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    			<p>
+    			Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal 
+    			y prevenir la delincuencia. 
+    			</p>
     		</div>
     		<div class = "box">
-                <h2>SIGUENOS</h2>
+                <h2>CONTACTANOS</h2>
                 <div class="red-social">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <p>todosjuntos@us.security.com</p>
                 </div>
             </div>
     	</div>
@@ -81,7 +87,5 @@
             <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-	
-	
 </body>
 </html>
