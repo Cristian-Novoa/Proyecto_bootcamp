@@ -83,6 +83,12 @@ body{
 	color: #000;
 }
 
+.main-title {
+	padding: 10px;
+	text-align: center;
+	margin-top: 100px;
+}
+
 .about-us {
 	width: 100%;
     height: 100%;
@@ -205,6 +211,40 @@ bio-bio-1 {
 	
 	
 }
+.num-emergency {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+.contact-emergency {
+	display: flex;
+	justify-content:space-evenly;
+}
+
+.img-contact {
+	size: 20px;
+}
+
+.ambulancia{
+	display: flex;
+	flex-direction: column;
+	align-items:center 
+	
+}
+
+.bomberos {
+	display: flex;
+	flex-direction: column;
+	align-items:center
+	;
+}
+
+.carabineros {
+	display: flex;
+	flex-direction: column;
+	align-items:center
+	
+}
 
 /*cards*/
 
@@ -228,6 +268,8 @@ bio-bio-1 {
 	align-items: center;
 	margin-bottom: 30px;
 }
+
+
 /*cards*/
 
 .cardco {

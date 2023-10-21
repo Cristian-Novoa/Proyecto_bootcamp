@@ -25,40 +25,34 @@
         </div>
     </header>
     <div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>Tu seguridad esta con nosotros </h1>
+    <h1 class = "main-title">Tu seguridad esta con nosotros </h1>
     </div>
     <section class="middle-content">
     	<div class="slider-box">
     		<ul>
     			<li>
-    				<img src="img/s1.png">
+    				<img src="img/s1.jpg">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s2.png">
+    				<img src="img/s2.jpg">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s3.png">
+    				<img src="img/s3.jpg">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s4.png">
+    				<img src="img/s4.jpg">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
@@ -67,26 +61,24 @@
     		</ul>
     	</div>
     </section>
+    <div class="middle-content-2">
+    	<div class="about-us">
+    		<h2>Nuestro proposito para ustedes</h2>
+    		<div class="about-us-2">
+    			<img alt="icono" src="img/icon_home.png">
+    			<div class="about-us-muro">
+    				<p>Nuestra mision es unir comunidades, promover seguridad y comunicacion, 						fortalecer la colaboracion vecinal y prevenir la delincuecia. Somos mas 						que una empresa de seguirdad; somos una comnudidad comprometida con la 						tranquiladad de tu vecindario.</p>
+    				<p>Te invitamos a entrar a nuestro muro de comnetarios para mantener 						informado a tus vecinos.</p>
+    				<a href="/foro">Comunidad</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-12 mb-5">
-                    <hr>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h3>Que hacemos</h3>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <p>Apoyamos a las empresas en la creación de productos y servicios digitales innovadores centrados en el cliente, a través de un trabajo interdisciplinario que combina la estrategia, la creatividad, los datos y el diseño.</p>
-                    <a href="#form-contact" class="btn btn-yellow">Contáctanos</a>
-                </div>
-            </div>
-            <div class="row mt-5 d-none">
-                <div class="col-12 mt-5">
-                    <h4><span>La evolución de tu compañía necesita una consultoría diferente.</span> En BBK+2Brains ofrecemos un modelo multidisciplinario de capacidades en un único aliado.</h4>
-                </div>
-            </div>
         </div>
+            <div class="row mt-5 d-none">
+            </div>
     </section>
     <section class="topcontent">
     <div >
@@ -100,135 +92,88 @@
                             </div>
                             <div class="col-12 col-md-7">
                                 <div data-aos="fade-up" class="principal_text aos-init">
-                                    <h3>No hacemos consultoría tradicional.</h3>
+                                    <h3>No hacemos consultoria tradicional.</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-between mt-5">
                             <div class="col-12 col-md-5">
                                 <div data-aos="fade-up" class="principal_text aos-init">
-                                    <p>Somos una consultora estratégica que ayuda a líderes de
-                                        industria a acelerar y construir hoy su mañana, gracias
-                                        a nuestra capacidad integrada de tecnología, diseño y
-                                        visión de negocio. Generamos saltos de valor concretos
+                                    <p>Somos una consultora estrategica que ayuda a lideres de
+                                        industria a acelerar y construir hoy su ma�ana, gracias
+                                        a nuestra capacidad integrada de tecnologia, diseno y
+                                        vision de negocio. Generamos saltos de valor concretos
                                         con soluciones end to end de alto impacto, medibles y
                                         siempre conectados con las necesidades profundas del
                                         usuario.</p>
-                                    <a href="#form-contact" class="btn btn-yellow">Contáctanos</a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-5 bg-offset">
                                 <img src="https://www.bbk2brains.com/hubfs/home-2023/photo-1.jpg" alt="">
                             </div>
                         </div>
-                        <br>
-                        <br>
-                        <!-- Contadores -->
-                        <div class="row mt-5 mt-lg-0 pt-5 pt-lg-0" id="counters_1" style="position: relative; z-index: 20;">
-                            <div class="col-6 col-lg-3 aos-init" data-aos="fade-down">
-                                <div class="flex-number">
-                                    <div>
-                                        <img src="img/shield-plus-solid-24.png">
-                                    </div>
-                                    <div>
-                                        <span class="counter c_0" data-targetnum="360" data-speed="2000">360</span>
-                                    </div>
-                                </div>
-                                <div class="text-counter">
-                                    <b>Personas</b>
-                                    <p>
-                                        talento con enfoque en tecnología, diseño y estrategia.
-                                    </p>
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-lg-3 aos-init" data-aos="fade-down" data-aos-delay="100">
-                                <div class="flex-number">
-                                    <div>
-                                        <img src="img/shield-plus-solid-24.png">
-                                    </div>
-                                    <div>
-                                        <span class="counter c_1" data-targetnum="13" data-speed="2000">13</span>
-                                    </div>
-                                </div>
-                                <div class="text-counter">
-                                    <b>Años</b>
-                                    <p>ayudando a las compañías&nbsp;a construir su futuro.</p>
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-lg-3 aos-init" data-aos="fade-down" data-aos-delay="200">
-                                <div class="flex-number">
-                                    <div>
-                                        <img src="img/shield-plus-solid-24.png">
-                                    </div>
-                                    <div>
-                                        <span class="counter c_2" data-targetnum="100" data-speed="2000">100</span>
-                                    </div>
-                                </div>
-                                <div class="text-counter">
-                                    <b>Clientes</b>
-                                    <p>en una gran variedad de industrias</p>
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-lg-3 aos-init" data-aos="fade-down" data-aos-delay="300">
-                                <div class="flex-number">
-                                    <div>
-                                        <img src="img/shield-plus-solid-24.png">
-                                    </div>
-                                    <div>
-                                        <span class="counter c_3" data-targetnum="1000" data-speed="2000">1000</span>
-                                    </div>
-                                </div>
-                                <div class="text-counter">
-                                    <b>Proyectos</b>
-                                    <p>desde el sueño, al código</p>
-                                </div>
-                            </div>  
-                        </div>                     
-                    </div>
-                </div>
-            </div>
+                  </div>
+                         
+                </div>  
+            </div>                     
         </div>
     </div>
     </section>
-   
+    <div class="num-emergency">
+    	<h2>Numeros de emergencia</h2>
+    </div>
+   		<div class="contact-emergency">
+                   <div class="ambulancia">
+                   <div class="img-contact">
+                   		<img src="">
+                   </div>
+                   <h3>Ambulancia</h3>
+                   <h3>131</h3>
+                   </div>
+                   <div class="bomberos">
+                   <div class="img-contact">
+                    	<img src="">
+                   </div>
+                   <h3>Bomberos</h3>
+                   <h3>132</h3>
+                  </div>
+                   <div class="carabineros">
+                   <div class="img-contact">
+                    	<img src="">
+                   </div>
+                   <h3>Carabineros</h3>
+                   <h3>133</h3>
+                   </div>
+                 </div>
     <section class="cardco">
     	<div class="cardco1">
     	<div class="card">
     		<figure>
-    			<img src="img/s4.png">
+    			<img src="img/8� regi�n.png">
     		</figure>
     		<div class="contenido">
-    			<h3>Contabilidad</h3>
-    			<p>La Octava Region de Chile es la Region del Biobio, que se divide en las provincias de ñuble, Bio Bio, Concepcion y Arauco.
-    			   Su capital es Concepcion, que es una de las ciudades mas importantes de Chile, gracias a su rica herencia en cultura, 
-    			   con influencias indigenas</p>
+    			<h3>Ubicacion</h3>
+    			<p>La Octava Region se encuentra en la zona centro-sur de Chile, limitando al norte con la Region del Maule, al sur con la Region de La Araucania, al este con la Region de Nuble y al oeste con el oceano Pacifico. La capital de la Region del Biob�o es la ciudad de Concepcion, que es la segunda ciudad mas grande de Chile y un importante centro industrial y comercial.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
     	<div class="card">
     		<figure>
-    			<img src="img/s4.png">
+    			<img src="img/puente.jpg">
     		</figure>
     		<div class="contenido">
-    			<h3>Contabilidad</h3>
-    			<p>La Octava Region de Chile es la Region del Biobio, que se divide en las provincias de ñuble, Bio Bio, Concepcion y Arauco.
-    			   Su capital es Concepcion, que es una de las ciudades mas importantes de Chile, gracias a su rica herencia en cultura, 
-    			   con influencias indigenas</p>
+    			<h3>Cultura</h3>
+    			<p>La Octava Region tiene una rica tradici�n cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local, y la region es conocida por su carnaval de invierno en la ciudad de Concepcion. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
     	<div class="card">
     		<figure>
-    			<img src="img/s4.png">
+    			<img src="img/plaza.jpg">
     		</figure>
     		<div class="contenido">
-    			<h3>Contabilidad</h3>
-    			<p>La Octava Region de Chile es la Region del Biobio, que se divide en las provincias de ñuble, Bio Bio, Concepcion y Arauco.
-    			   Su capital es Concepcion, que es una de las ciudades mas importantes de Chile, gracias a su rica herencia en cultura, 
-    			   con influencias indigenas</p>
+    			<h3>Historia</h3>
+    			<p> La Octava Region tiene una rica historia, que incluye la presencia de pueblos indigenas como los mapuches. Durante la colonizaci�n espa�ola, la regi�n fue escenario de conflictos y expediciones. Mas recientemente, la region ha tenido un papel importante en la historia de Chile, incluyendo la independencia del pais y el terremoto de 2010.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -246,7 +191,7 @@
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
     			<p></p>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    			<p>Nuestra misi�n es unir comunidades, promover seguridad y comunicaci�n, fortalecer la colaboraci�n vecinal y prevenir la delincuencia.</p>
     		</div>
     		<div class = "box">
                 <h2>SIGUENOS</h2>
