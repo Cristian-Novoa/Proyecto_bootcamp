@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
+import com.codingdojo.cristian.modelos.Comuna;
 import com.codingdojo.cristian.modelos.Ubicacion;
 import com.codingdojo.cristian.modelos.Usuario;
 import com.codingdojo.cristian.servicios.ServicioUbicaciones;
@@ -35,7 +36,7 @@ public class ControladorUbicaciones {
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
-		
+		model.addAttribute("comunas",Comuna.comunas);
 		return "perfil.jsp";
 	}
 	
@@ -60,12 +61,12 @@ public class ControladorUbicaciones {
 	
 	@PutMapping("/actualizar")
 	public String update(HttpSession session,
-						 @Valid @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
+						 @Valid @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,Model model,
 						 BindingResult result) {
 		//Revisamos que el usuario haya iniciado sesion
 		
 				Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
-				
+				model.addAttribute("comunas",Comuna.comunas);
 				if(tempUsuario == null) {
 					return "redirect:/";
 			}

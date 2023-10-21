@@ -33,7 +33,7 @@
     	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
     	<div class="profile-actions">
        		 <table class="table table-bordered">
-       		 <a href="/editar/${usuarioEnSesion.id}"><button class="btn btn--primary">Editar Ubicacion</button></a>
+       		 
        		 	<thead>
 		             <tr>
 		               <th scope="col">Nombre</th>
@@ -47,11 +47,25 @@
 	                <tr>
 	                    <td>${usuarioEnSesion.nombre}</td>
 	                    <td>${usuarioEnSesion.email}</td>
+	                    
 	                </tr>
                 </tbody>
             </table>
     	</div>
 	</div>
+	</section>
+	<section class="boxuser">
+		<div class="input-box">
+		<form:form method="POST" modelAttribute="nuevaDireccion" action="/actualizar">
+				<form:label path="comuna">comuna</form:label>
+				<form:select path="comuna" class="form-select">
+					<c:forEach items="${comunas}" var="comuna">
+						<form:option value="${comuna}">${comuna}</form:option>
+					</c:forEach>
+				</form:select>
+				<input type="submit" class="btn btn-success mt-3" value="Guardar" />
+			</form:form>
+			</div>
 	</section>
 	<script src="js/perfil.js" type="text/javascript"></script>
 	<footer class = "pie-pagina">
