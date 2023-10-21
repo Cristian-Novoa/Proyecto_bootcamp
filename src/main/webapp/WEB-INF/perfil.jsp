@@ -24,7 +24,10 @@
         </div>
     </header>
     <section class="boxuser">
-   		<h2>Perfil de Usuario</h2>
+    	<div class = "perfil-top">
+    		<i class='bx bxs-id-card bx-lg'></i>
+   			<h2>Perfil de Usuario</h2>
+    	</div>
 		<div class="container text-center">
     		<div class="center-content">
         		<img src="/img/usuario.png" alt="Imagen de perfil">

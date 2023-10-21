@@ -42,10 +42,10 @@
     						</div>
     					</div>
     				</div>
-    				<div class = "comment-title"><h2>Comentarios</h2></div>
+    				<div class = "comment-title border-top border-3 border-dark"><h2>Comentarios</h2></div>
     				<div class = "box-comment">
     					<c:forEach items = "${publicacion.mensajesPublicacion}" var = "msg">
-    						<div class = "msg-user">
+    						<div class = "msg-user border-bottom border-1 border-dark">
     							<div class = "icon-user">
     								<i class='bx bx-md bxs-user-circle'></i>
     							</div>

@@ -31,7 +31,8 @@
     		<a href = "/nueva">Crea tu publicacion</a>
     	</div>
     </div>
-    <c:forEach items = "${publicaciones}" var = "publicacion">
+    <div class = "box-main">
+    	<c:forEach items = "${publicaciones}" var = "publicacion">
     	<div class = "boxuser">
     		<div class = "user-left">
     			<i class='bx bx-md bxs-user-circle'></i>
@@ -54,6 +55,7 @@
     		</div>
     	</div>
     </c:forEach>
+    </div>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
