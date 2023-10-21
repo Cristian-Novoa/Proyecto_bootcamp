@@ -30,6 +30,39 @@
     	</div>
     	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
 	</div>
+   		<h2>Perfil de Usuario</h2>
+		<div class="container text-center">
+    		<div class="center-content">
+        		<img src="/img/usuario.png" alt="Imagen de perfil">
+    		</div>
+    		<div class = "information">
+    			<h2>Informacion</h2>
+    			<div class = "user-information">
+    				<p>Nombre de usuario</p>
+    				<p>${usuarioEnSesion.nombre}</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Correo electronico</p>
+    				<p>${usuarioEnSesion.email}</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Region</p>
+    				<p>Region del usuario</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Comuna</p>
+    				<p>Comuna del usuario</p>
+    			</div>
+    			<div class = "user-information">
+    				<p>Calle</p>
+    				<p>Calle del usuario</p>
+    			</div>
+    			<div class = "user-btn">
+    				<a href = "/ubicacion" class = "btn btn-info">Agregar Ubicacion</a>
+    			</div>
+    		</div>
+		</div>
+	</section>
 	<footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
@@ -41,15 +74,18 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p></p>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    			<p>
+    			Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal 
+    			y prevenir la delincuencia. 
+    			</p>
     		</div>
     		<div class = "box">
-                <h2>SIGUENOS</h2>
+                <h2>CONTACTANOS</h2>
                 <div class="red-social">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <p>todosjuntos@us.security.com</p>
                 </div>
             </div>
     	</div>

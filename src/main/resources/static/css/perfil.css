@@ -8,10 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
 .profile-actions button {
     margin: 5px; 
     background-color: #007BFF; 
@@ -117,7 +113,6 @@ body{
 }
 
 .boxuser{
-	display: flex;
 	justify-content: space-between;
 	width: 1000px;
 	margin-left: 250px;
@@ -131,7 +126,56 @@ body{
 	margin-bottom: 30px;
 }
 
+.boxuser h2{
+	color: #1172ce;
+	padding: 20px;
+	font-weight: bold;
+}
 
+.boxuser .information{
+	width: 100%;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.boxuser .information .user-information{
+	justify-content: space-between;
+	width: 700px;
+	display: flex;
+	margin: 10px 0 10px 10px;
+	padding: 10px;
+	background-color: #2e86c1;
+	border-radius: 10px;
+	box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+	-webkit-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.75);
+}
+
+.boxuser .information .user-information p{
+	color: #fff;
+	line-height: 10px;;
+	font-weight: bold;
+}
+
+.boxuser .information .user-btn{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.boxuser .information .btn{
+	margin: 10px 0px 10px 13px;
+	border-radius: 10px;
+	background-color: #2e86c1;
+	border-color: #2e86c1;
+	color: #fff;
+}
+
+.boxuser .information .btn:hover{
+	-webkit-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.75);
+}
 
 label.btn {
     margin-bottom: 0;
@@ -147,15 +191,10 @@ label.btn {
     cursor: pointer;
 }
 
-
-
-
 /*footer*/
 .pie-pagina{
-	margin-top: 100%;
     width: 100%;
     background-color: #2E86C1;
-    
 }
 
 .pie-pagina .grupo-1{

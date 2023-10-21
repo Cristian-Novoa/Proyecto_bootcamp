@@ -1,4 +1,5 @@
 @charset "ISO-8859-1";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 *{
@@ -8,13 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-	background: url(/img/5026563.jpg) no-repeat;
-	background-size: cover;
-}
-
-
-/*Seccion nav*/
+/*Seccion Nav*/
 
 .encabezado{
     top: 0;
@@ -77,151 +72,38 @@ body{
 	color: #000;
 }
 
+/*Seccion Formulario*/
 
-/*Seccion publicaciones*/
-
-.midle-title{
-	background: #ccc;
-	background: linear-gradient(#000, grey);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	font-size: 1.5rem;
-	text-align: center;
-	margin-top: 20px;
-	align-items: center;
+.container-fluid{
+	margin-top: 100px;
+	justify-content: center;
+	margin-bottom: 100px;
 }
 
-.btn-publicacion{
+.container-fluid .box-form{
 	border: solid thin black;
-	width: 200px;
-	height: 30px;
-	line-height: 30px;
-	margin-left: 1050px;
-	margin-top: -38px;
-	text-align: center;
-	border-radius: 20px;
-	background-color: #2e86c1;
-	
-}
-
-.btn-publicacion a{
-	font-size: 1rem;
-	text-decoration: none;
-	color: #fff;
-}
-
-.btn-publicacion:hover{
-	background-color: #1f618d;
-	transition: 0.5s ease;
-}
-
-.btn-publicacion a:hover{
-	color: #fff;
-	transition: 0.5 ease;
-}
-
-.midle-content .table{
-	width: 1000px;
-	margin-left: 250px;
-}
-
-.midle-content .table a{
-	text-decoration: none;
-}
-
-.bx{
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.user-post p{
-	margin-left: 10px;
-	font-size: 1rem;
-}
-
-.user-post a {
-	text-decoration: none;
-	color: #000;
-	margin-left: 100px;
-}
-
-.user-post a:hover{
-	color: #2E86C1;
-}
-
-.boxuser{
-	display: flex;
-	justify-content: space-between;
-	width: 1000px;
-	margin-left: 250px;
-	border-radius: 10px;
-	margin-top: 30px;
-	-webkit-box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
-	-moz-box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
-	box-shadow: -8px 5px 10px 0px rgba(148,139,148,1);
-	background-color: #fff;
-	align-items: center;
-	margin-bottom: 30px;
-}
-
-.boxuser .user-left{
-	width: 15%;
-	justify-content: flex-start;
-	margin-left: 15px;
-	margin-top: 15px;
-	align-items: center;
-}
-
-.boxuser .user-left p{
-	font-size: 0.8rem;
-	text-align: center;
-}
-
-.boxuser .bx{
-	margin-left: 70px;
-	width: 20px;
-	height: 20px;
-}
-
-.boxuser .user-midle{
-	width: 50%;
+	width: 450px;
+	margin: auto;
 	padding: 10px;
 }
 
-.boxuser .user-midle a{
-	text-decoration: none;
-}
-
-.boxuser .user-midle h2, p{
-	margin-left: 30px;
-}
-
-.boxuser .user-midle h2{
-	font-size: 1.5rem;
-}
-
-.boxuser .user-midle p{
-	font-size:1rem;
-}
-
-.boxuser .seccion-comment .comments{
-	margin-bottom: 15px;
-	text-align: center;
-	font-size: 1.5rem;
+.box-form .user-comuna, .user-calle label{
+	margin-top: 10px;
 }
 
 
-.boxuser .seccion-comment{
-	width: 18%;
-	font-size: 0.8rem;
-	text-align: center;
+
+.box-form input[type = "submit"]{
+	margin-top: 10px;
+	border-radius: 10px;
 }
 
+/*Seccion del footer*/
 
-/*footer*/
 .pie-pagina{
     width: 100%;
     background-color: #2E86C1;
+    
 }
 
 .pie-pagina .grupo-1{
@@ -265,7 +147,7 @@ body{
     height: 45px;
     line-height: 45px;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: #2E86C1;
     text-align: center;
     transition: all 300ms ease;
@@ -285,4 +167,3 @@ body{
 .pie-pagina .grupo-2 small{
     font-size: 1rem;
 }
-

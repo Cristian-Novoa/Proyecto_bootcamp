@@ -91,15 +91,18 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p></p>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?</p>
+    			<p>
+    			Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal 
+    			y prevenir la delincuencia. 
+    			</p>
     		</div>
     		<div class = "box">
-                <h2>SIGUENOS</h2>
+                <h2>CONTACTANOS</h2>
                 <div class="red-social">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <p>todosjuntos@us.security.com</p>
                 </div>
             </div>
     	</div>

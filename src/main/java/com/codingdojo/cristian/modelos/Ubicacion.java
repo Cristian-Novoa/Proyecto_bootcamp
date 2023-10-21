@@ -1,7 +1,6 @@
 package com.codingdojo.cristian.modelos;
 
 import java.util.Date;
-import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -11,7 +10,8 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -42,8 +42,9 @@ public class Ubicacion {
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updatedAt;
 	
-	@OneToMany(mappedBy="direccion", fetch=FetchType.LAZY)
-	private List<Usuario> habitantes;
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "usuario_id")
+	private Usuario usuario;
 	
 	public Ubicacion() {
 	}
@@ -97,12 +98,12 @@ public class Ubicacion {
 	}
 
 
-	public List<Usuario> getHabitantes() {
-		return habitantes;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setHabitantes(List<Usuario> habitantes) {
-		this.habitantes = habitantes;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	@PrePersist
