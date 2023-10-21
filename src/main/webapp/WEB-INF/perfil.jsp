@@ -23,51 +23,13 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
-	
     <section class="boxuser">
 	<div class="container text-center">
     	<div class="center-content">
         	<img src="/img/usuario.png" alt="Imagen de perfil">
     	</div>
-    	
     	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
-    	<div class="profile-actions">
-       		 <table class="table table-bordered">
-       		 
-       		 	<thead>
-		             <tr>
-		               <th scope="col">Nombre</th>
-		               <th scope="col">Email</th>
-		               <th scope="col">Region</th>
-		               <th scope="col">Comuna</th>
-		               <th scope="col">Calle</th>
-		             </tr>
-                </thead>
-                <tbody>
-	                <tr>
-	                    <td>${usuarioEnSesion.nombre}</td>
-	                    <td>${usuarioEnSesion.email}</td>
-	                    
-	                </tr>
-                </tbody>
-            </table>
-    	</div>
 	</div>
-	</section>
-	<section class="boxuser">
-		<div class="input-box">
-		<form:form method="POST" modelAttribute="nuevaDireccion" action="/actualizar">
-				<form:label path="comuna">comuna</form:label>
-				<form:select path="comuna" class="form-select">
-					<c:forEach items="${comunas}" var="comuna">
-						<form:option value="${comuna}">${comuna}</form:option>
-					</c:forEach>
-				</form:select>
-				<input type="submit" class="btn btn-success mt-3" value="Guardar" />
-			</form:form>
-			</div>
-	</section>
-	<script src="js/perfil.js" type="text/javascript"></script>
 	<footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">
@@ -95,7 +57,5 @@
             <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-	
-	
 </body>
 </html>
