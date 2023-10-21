@@ -23,35 +23,46 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
+    <div class="container-parallax">
+  	<!-- Seccion parallax -->
+  		<section class="parallax-bg" ></section>
+  		<section class="parallax-content">
+  		</section>
+  <!-- Seccion NO parallax -->
+	</div> <!-- End Container -->
 	<div class = "container-fluid">
-		<div class = "box-form">
-			<form:form action = "/nuevaubicacion" method = "POST" modelAttribute = "nuevaUbicacion">
-				<div class = "user-region">
-					<form:label path = "region">Agrega una region</form:label>
-					<form:select path="region" class = "form-select">
-						<c:forEach items = "${regiones}" var = "region">
-							<form:option value="${region}">${region}</form:option>
-						</c:forEach>
-					</form:select>	
-				</div>
-				<div class = "user-comuna">
-					<form:label path = "comuna">Agrega una comuna</form:label>
-					<form:select path="comuna" class = "form-select">
-						<c:forEach items = "${comunas}" var = "comuna">
-							<form:option value="${comuna}">${comuna}</form:option>
-						</c:forEach>
-					</form:select>	
-				</div>
-				<div class = "user-calle">
-					<form:label path="calle">Ingresa tu Calle</form:label>
-					<form:input path = "calle" class = "form-control"/>
-					<form:errors path = "calle" class = "text-danger"/>
-				</div>
-				<form:hidden path = "usuario" value = "${usuarioEnSesion.id}"/>
-				<input type = "submit" class = "btn btn-info" value = "Guardar Direccion">
-			</form:form>
+			<div class = "title-ubi">
+				<i class='bx bxs-map bx-lg'></i>
+				<h2>Agregar nueva Ubicacion</h2>
+			</div>
+			<div class = "box-form">
+				<form:form action = "/nuevaubicacion" method = "POST" modelAttribute = "nuevaUbicacion">
+					<div class = "user-region">
+						<form:label path = "region">Agrega una region</form:label>
+						<form:select path="region" class = "form-select">
+							<c:forEach items = "${regiones}" var = "region">
+								<form:option value="${region}">${region}</form:option>
+							</c:forEach>
+						</form:select>	
+					</div>
+					<div class = "user-comuna">
+						<form:label path = "comuna">Agrega una comuna</form:label>
+						<form:select path="comuna" class = "form-select">
+							<c:forEach items = "${comunas}" var = "comuna">
+								<form:option value="${comuna}">${comuna}</form:option>
+							</c:forEach>
+						</form:select>	
+					</div>
+					<div class = "user-calle">
+						<form:label path="calle">Ingresa tu Calle</form:label>
+						<form:input path = "calle" class = "form-control"/>
+						<form:errors path = "calle" class = "text-danger"/>
+					</div>
+					<form:hidden path = "usuario" value = "${usuarioEnSesion.id}"/>
+					<input type = "submit" class = "btn btn-info" value = "Guardar Direccion">
+				</form:form>
+			</div>
 		</div>
-	</div>
 	<footer class = "pie-pagina">
         <div class = "grupo-1">
     	    <div class = "box">

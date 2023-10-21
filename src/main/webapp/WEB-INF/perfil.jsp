@@ -24,12 +24,6 @@
         </div>
     </header>
     <section class="boxuser">
-	<div class="container text-center">
-    	<div class="center-content">
-        	<img src="/img/usuario.png" alt="Imagen de perfil">
-    	</div>
-    	<h2>Bienvenido otra vez ${usuarioEnSesion.nombre}</h2>
-	</div>
    		<h2>Perfil de Usuario</h2>
 		<div class="container text-center">
     		<div class="center-content">
@@ -47,15 +41,33 @@
     			</div>
     			<div class = "user-information">
     				<p>Region</p>
-    				<p>Region del usuario</p>
+    				<p>
+    					<c:forEach items = "${ubicaciones}" var = "ubicacion">
+    						<c:if test = "${ubicacion.usuario.id == usuarioEnSesion.id}">
+    							${ubicacion.region}
+    						</c:if>
+    					</c:forEach>
+    				</p>
     			</div>
     			<div class = "user-information">
     				<p>Comuna</p>
-    				<p>Comuna del usuario</p>
+    				<p>
+    					<c:forEach items = "${ubicaciones}" var = "ubicacion">
+    						<c:if test = "${ubicacion.usuario.id == usuarioEnSesion.id}">
+    							${ubicacion.comuna}
+    						</c:if>
+    					</c:forEach>
+    				</p>
     			</div>
     			<div class = "user-information">
     				<p>Calle</p>
-    				<p>Calle del usuario</p>
+    				<p>
+    					<c:forEach items = "${ubicaciones}" var = "ubicacion">
+    						<c:if test = "${ubicacion.usuario.id == usuarioEnSesion.id}">
+    							${ubicacion.calle}
+    						</c:if>
+    					</c:forEach>
+    				</p>
     			</div>
     			<div class = "user-btn">
     				<a href = "/ubicacion" class = "btn btn-info">Agregar Ubicacion</a>

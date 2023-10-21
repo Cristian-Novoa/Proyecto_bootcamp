@@ -1,5 +1,7 @@
 package com.codingdojo.cristian.servicios;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +35,10 @@ public class ServicioMensajes {
 	
 	public void borrarMensaje(Long id) {
 		rM.deleteById(id);
+	}
+	
+	public List<Mensaje> listaMensajes(){
+		return rM.findAll();
 	}
 	
 	

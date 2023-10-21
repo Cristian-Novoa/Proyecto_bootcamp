@@ -1,5 +1,7 @@
 package com.codingdojo.cristian.servicios;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,5 +27,12 @@ public class ServicioUbicaciones {
 		return rUbi.save(nuevaUbicacion);
 	}
 	
+	public List<Usuario> listaUsuarios(){
+		return rUser.findAll();
+	}
+	
+	public List<Ubicacion> listaUbicaciones(){
+		return rUbi.findAll();
+	}
 	
 }

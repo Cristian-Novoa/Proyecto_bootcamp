@@ -15,13 +15,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 100px;
     padding: 20px 100px;
 	background: linear-gradient(180deg, rgba(8,75,118,1) 0%, rgba(19,124,230,1) 100%); 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    position: fixed;
+   	box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .logo img{
@@ -74,14 +78,53 @@
 
 /*Seccion Formulario*/
 
+
+.container-parallax{
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+	perspective: 3px;
+}
+
+section{
+	background-size: cover;
+	color: white;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parallax-bg{
+	background-image: url(/img/s1.jpg);
+	background-position: center;
+	transform: translateZ(-2.5px) scale(2);
+	background-size: cover;
+	z-index: -1;
+	height: 80vh;
+}
+
+.parallax-content{
+	z-index: -1;
+	transform: translateY(-25vh) translateZ(0px) scale(1);
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
 .container-fluid{
-	margin-top: 100px;
 	justify-content: center;
 	margin-bottom: 100px;
 }
 
+.container-fluid .title-ubi{
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container-fluid .box-form{
-	border: solid thin black;
 	width: 450px;
 	margin: auto;
 	padding: 10px;

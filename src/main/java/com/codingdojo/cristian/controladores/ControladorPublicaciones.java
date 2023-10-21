@@ -101,6 +101,10 @@ public class ControladorPublicaciones {
 			return "redirect:/";
 		}
 		
+		List<Mensaje> listaMensajes = sM.listaMensajes();
+		model.addAttribute("mensajes", listaMensajes);
+		
+		
 		Publicacion publicacion = sP.encontrarPublicacion(publicacion_id);
 		model.addAttribute("publicacion", publicacion);
 		
