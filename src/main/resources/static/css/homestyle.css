@@ -221,9 +221,9 @@ bio-bio-1 {
 	justify-content:space-evenly;
 }
 
-.img-contact {
+/*.img-contact {
 	size: 20px;
-}
+}*/
 
 .ambulancia{
 	display: flex;
@@ -277,7 +277,6 @@ bio-bio-1 {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	font-family: sans-serif;
 	border-top: 25px;
 	
@@ -288,6 +287,7 @@ bio-bio-1 {
 	width: 100%;
 	display: flex;
 	max-width: 1100px;
+	max-height: 720px;
 }
 
 .card{

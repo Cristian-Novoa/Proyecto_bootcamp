@@ -24,9 +24,6 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
-    <div>
-    <h1 class = "main-title">Tu seguridad esta con nosotros </h1>
-    </div>
     <section class="middle-content">
     	<div class="slider-box">
     		<ul>
@@ -123,28 +120,28 @@
     	<h2>Numeros de emergencia</h2>
     </div>
    		<div class="contact-emergency">
-                   <div class="ambulancia">
-                   <div class="img-contact">
-                   		<img src="">
-                   </div>
-                   <h3>Ambulancia</h3>
-                   <h3>131</h3>
-                   </div>
-                   <div class="bomberos">
-                   <div class="img-contact">
-                    	<img src="">
-                   </div>
-                   <h3>Bomberos</h3>
-                   <h3>132</h3>
-                  </div>
-                   <div class="carabineros">
-                   <div class="img-contact">
-                    	<img src="">
-                   </div>
-                   <h3>Carabineros</h3>
-                   <h3>133</h3>
-                   </div>
+            <div class="ambulancia">
+         		<div class="img-contact">
+                   	<img src="icon_home.png">
+                </div>
+                <h3>Ambulancia</h3>
+                <h3>131</h3>
+             </div>
+             <div class="bomberos">
+                 <div class="img-contact">
+                    <img src="">
                  </div>
+                 <h3>Bomberos</h3>
+                 <h3>132</h3>
+             </div>
+             <div class="carabineros">
+                 <div class="img-contact">
+                     <img src="">
+                 </div>
+                 <h3>Carabineros</h3>
+                 <h3>133</h3>
+             </div>
+        </div>
     <section class="cardco">
     	<div class="cardco1">
     	<div class="card">
@@ -163,7 +160,7 @@
     		</figure>
     		<div class="contenido">
     			<h3>Cultura</h3>
-    			<p>La Octava Region tiene una rica tradición cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local, y la region es conocida por su carnaval de invierno en la ciudad de Concepcion. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
+    			<p>La Octava Region tiene una rica tradición cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -177,6 +174,41 @@
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
+      </div>
+    </section>
+    <section class="cardco">
+        <div class="cardco1">
+        <div class="card">
+            <figure>
+                <img src="img/icon_home.png">
+            </figure>
+            <div class="contenido">
+                <h3>Ofrecemos</h3>
+                <p>Unión Comunitaria: Fomentamos la colaboración y la interacción entre los..<br>Recursos de Seguridad: Proporcionamos herramientas y asesoramiento que te... <br>Iniciativas Comunitarias: Organizamos proyectos y eventos que promueven un.... <br></p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/seguridad.jpeg">
+            </figure>
+            <div class="contenido">
+                <h3>Capacitaciones</h3>
+                <p>Inscribete a nuestra formación especializada en seguridad para que estés mejor preparado ante situaciones de riesgo. <br> Tales como: <br>Prevención de Robos y Asaltos - Primeros Auxilios y RCP - Seguridad Cibernética...
+                </p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/unidos.png">
+            </figure>
+            <div class="contenido">
+                <h3>Unete a nosotros</h3>
+                <p>Si deseas vivir en un entorno más seguro y sentirte respaldado por tu comunidad, Us es la respuesta. Únete a nosotros y descubre cómo podemos transformar tu vecindario en un lugar donde la seguridad y la unión son una realidad. ¡Contáctanos hoy y déjanos ayudarte a construir un futuro más seguro para ti y tus vecinos!</p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
       </div>
     </section>
     <footer class = "pie-pagina">
