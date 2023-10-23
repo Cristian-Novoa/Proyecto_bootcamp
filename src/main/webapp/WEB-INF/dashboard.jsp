@@ -25,12 +25,6 @@
         </div>
     </header>
     <div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <h1>Tu seguridad esta con nosotros </h1>
     </div>
     <section class="middle-content">
