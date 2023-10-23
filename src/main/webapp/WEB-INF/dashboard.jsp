@@ -122,14 +122,14 @@
    		<div class="contact-emergency">
             <div class="ambulancia">
          		<div class="img-contact">
-                   	<img src="icon_home.png">
+                   	<img src="/img/ambulancia.png">
                 </div>
                 <h3>Ambulancia</h3>
                 <h3>131</h3>
              </div>
              <div class="bomberos">
                  <div class="img-contact">
-                    <img src="">
+                    <img src="/img/bomberos.png">
                  </div>
                  <h3>Bomberos</h3>
                  <h3>132</h3>

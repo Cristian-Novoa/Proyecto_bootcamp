@@ -221,9 +221,11 @@ bio-bio-1 {
 	justify-content:space-evenly;
 }
 
-/*.img-contact {
+.img-contact {
 	size: 20px;
-}*/
+	width: 200px;
+	height: 200px;
+}
 
 .ambulancia{
 	display: flex;
