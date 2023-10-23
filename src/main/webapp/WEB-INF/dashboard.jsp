@@ -97,7 +97,7 @@
                             <div class="col-12 col-md-5">
                                 <div data-aos="fade-up" class="principal_text aos-init">
                                     <p>Somos una consultora estrategica que ayuda a lideres de
-                                        industria a acelerar y construir hoy su mañana, gracias
+                                        industria a acelerar y construir hoy su maï¿½ana, gracias
                                         a nuestra capacidad integrada de tecnologia, diseno y
                                         vision de negocio. Generamos saltos de valor concretos
                                         con soluciones end to end de alto impacto, medibles y
@@ -120,37 +120,37 @@
     	<h2>Numeros de emergencia</h2>
     </div>
    		<div class="contact-emergency">
-                   <div class="ambulancia">
-                   <div class="img-contact">
-                   		<img src="">
-                   </div>
-                   <h3>Ambulancia</h3>
-                   <h3>131</h3>
-                   </div>
-                   <div class="bomberos">
-                   <div class="img-contact">
-                    	<img src="">
-                   </div>
-                   <h3>Bomberos</h3>
-                   <h3>132</h3>
-                  </div>
-                   <div class="carabineros">
-                   <div class="img-contact">
-                    	<img src="">
-                   </div>
-                   <h3>Carabineros</h3>
-                   <h3>133</h3>
-                   </div>
+            <div class="ambulancia">
+         		<div class="img-contact">
+                   	<img src=>
+                </div>
+                <h3>Ambulancia</h3>
+                <h3>131</h3>
+             </div>
+             <div class="bomberos">
+                 <div class="img-contact">
+                    <img src=>
                  </div>
+                 <h3>Bomberos</h3>
+                 <h3>132</h3>
+             </div>
+             <div class="carabineros">
+                 <div class="img-contact">
+                     <img src="">
+                 </div>
+                 <h3>Carabineros</h3>
+                 <h3>133</h3>
+             </div>
+        </div>
     <section class="cardco">
     	<div class="cardco1">
     	<div class="card">
     		<figure>
-    			<img src="img/8° región.png">
+    			<img src="img/8ï¿½ regiï¿½n.png">
     		</figure>
     		<div class="contenido">
     			<h3>Ubicacion</h3>
-    			<p>La Octava Region se encuentra en la zona centro-sur de Chile, limitando al norte con la Region del Maule, al sur con la Region de La Araucania, al este con la Region de Nuble y al oeste con el oceano Pacifico. La capital de la Region del Biobío es la ciudad de Concepcion, que es la segunda ciudad mas grande de Chile y un importante centro industrial y comercial.</p>
+    			<p>La Octava Region se encuentra en la zona centro-sur de Chile, limitando al norte con la Region del Maule, al sur con la Region de La Araucania, al este con la Region de Nuble y al oeste con el oceano Pacifico. La capital de la Region del Biobï¿½o es la ciudad de Concepcion, que es la segunda ciudad mas grande de Chile y un importante centro industrial y comercial.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -160,7 +160,7 @@
     		</figure>
     		<div class="contenido">
     			<h3>Cultura</h3>
-    			<p>La Octava Region tiene una rica tradición cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local, y la region es conocida por su carnaval de invierno en la ciudad de Concepcion. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
+    			<p>La Octava Region tiene una rica tradiciï¿½n cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -170,10 +170,45 @@
     		</figure>
     		<div class="contenido">
     			<h3>Historia</h3>
-    			<p> La Octava Region tiene una rica historia, que incluye la presencia de pueblos indigenas como los mapuches. Durante la colonización española, la región fue escenario de conflictos y expediciones. Mas recientemente, la region ha tenido un papel importante en la historia de Chile, incluyendo la independencia del pais y el terremoto de 2010.</p>
+    			<p> La Octava Region tiene una rica historia, que incluye la presencia de pueblos indigenas como los mapuches. Durante la colonizaciï¿½n espaï¿½ola, la regiï¿½n fue escenario de conflictos y expediciones. Mas recientemente, la region ha tenido un papel importante en la historia de Chile, incluyendo la independencia del pais y el terremoto de 2010.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
+      </div>
+    </section>
+    <section class="cardco">
+        <div class="cardco1">
+        <div class="card">
+            <figure>
+                <img src="img/icon_home.png">
+            </figure>
+            <div class="contenido">
+                <h3>Ofrecemos</h3>
+                <p>Uniï¿½n Comunitaria: Fomentamos la colaboraciï¿½n y la interacciï¿½n entre los..<br>Recursos de Seguridad: Proporcionamos herramientas y asesoramiento que te... <br>Iniciativas Comunitarias: Organizamos proyectos y eventos que promueven un.... <br></p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/seguridad.jpeg">
+            </figure>
+            <div class="contenido">
+                <h3>Capacitaciones</h3>
+                <p>Inscribete a nuestra formaciï¿½n especializada en seguridad para que estï¿½s mejor preparado ante situaciones de riesgo. <br> Tales como: <br>Prevenciï¿½n de Robos y Asaltos - Primeros Auxilios y RCP - Seguridad Cibernï¿½tica...
+                </p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/unidos.png">
+            </figure>
+            <div class="contenido">
+                <h3>Unete a nosotros</h3>
+                <p>Si deseas vivir en un entorno mï¿½s seguro y sentirte respaldado por tu comunidad, Us es la respuesta. ï¿½nete a nosotros y descubre cï¿½mo podemos transformar tu vecindario en un lugar donde la seguridad y la uniï¿½n son una realidad. ï¿½Contï¿½ctanos hoy y dï¿½janos ayudarte a construir un futuro mï¿½s seguro para ti y tus vecinos!</p>
+                   <a href="#">ver mas</a>
+            </div>
+        </div>
       </div>
     </section>
     <footer class = "pie-pagina">
@@ -188,7 +223,7 @@
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
     			<p></p>
-    			<p>Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal y prevenir la delincuencia.</p>
+    			<p>Nuestra misiï¿½n es unir comunidades, promover seguridad y comunicaciï¿½n, fortalecer la colaboraciï¿½n vecinal y prevenir la delincuencia.</p>
     		</div>
     		<div class = "box">
                 <h2>SIGUENOS</h2>
