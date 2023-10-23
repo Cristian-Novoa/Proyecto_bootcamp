@@ -64,7 +64,7 @@
     		<div class="about-us-2">
     			<img alt="icono" src="img/icon_home.png">
     			<div class="about-us-muro">
-    				<p>Nuestra mision es unir comunidades, promover seguridad y comunicacion, 						fortalecer la colaboracion vecinal y prevenir la delincuecia. Somos mas 						que una empresa de seguirdad; somos una comnudidad comprometida con la 						tranquiladad de tu vecindario.</p>
+    				<p>Nuestra mision es unir comunidades, promover seguridad y comunicacion, kl						fortalecer la colaboracion vecinal y prevenir la delincuecia. Somos mas 						que una empresa de seguirdad; somos una comnudidad comprometida con la 						tranquiladad de tu vecindario.</p>
     				<p>Te invitamos a entrar a nuestro muro de comnetarios para mantener 						informado a tus vecinos.</p>
     				<a href="/foro">Comunidad</a>
     			</div>
