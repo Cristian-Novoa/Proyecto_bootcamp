@@ -28,28 +28,28 @@
     	<div class="slider-box">
     		<ul>
     			<li>
-    				<img src="img/s1.jpg">
+    				<img src="img/1.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s2.jpg">
+    				<img src="img/2.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s3.jpg">
+    				<img src="img/3.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s4.jpg">
+    				<img src="img/4.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
@@ -64,7 +64,7 @@
     		<div class="about-us-2">
     			<img alt="icono" src="img/icon_home.png">
     			<div class="about-us-muro">
-    				<p>Nuestra mision es unir comunidades, promover seguridad y comunicacion, kl						fortalecer la colaboracion vecinal y prevenir la delincuecia. Somos mas 						que una empresa de seguirdad; somos una comnudidad comprometida con la 						tranquiladad de tu vecindario.</p>
+    				<p>Nuestra mision es unir comunidades, promover seguridad y comunicacion, 						fortalecer la colaboracion vecinal y prevenir la delincuecia. Somos mas 						que una empresa de seguirdad; somos una comnudidad comprometida con la 						tranquiladad de tu vecindario.</p>
     				<p>Te invitamos a entrar a nuestro muro de comnetarios para mantener 						informado a tus vecinos.</p>
     				<a href="/foro">Comunidad</a>
     			</div>
@@ -79,7 +79,7 @@
     </section>
     <section class="topcontent">
     <div >
-        <div >
+        <!--<div >
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -113,7 +113,7 @@
                          
                 </div>  
             </div>                     
-        </div>
+        </div>!-->
     </div>
     </section>
     <div class="num-emergency">
@@ -122,14 +122,14 @@
    		<div class="contact-emergency">
             <div class="ambulancia">
          		<div class="img-contact">
-                   	<img src="/img/ambulancia.png">
+                   	<img src=>
                 </div>
                 <h3>Ambulancia</h3>
                 <h3>131</h3>
              </div>
              <div class="bomberos">
                  <div class="img-contact">
-                    <img src="/img/bomberos.png">
+                    <img src=>
                  </div>
                  <h3>Bomberos</h3>
                  <h3>132</h3>
@@ -222,15 +222,18 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p></p>
-    			<p>Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal y prevenir la delincuencia.</p>
+    			<p>
+    			Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal 
+    			y prevenir la delincuencia. 
+    			</p>
     		</div>
     		<div class = "box">
-                <h2>SIGUENOS</h2>
+                <h2>CONTACTANOS</h2>
                 <div class="red-social">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <p>todosjuntos@us.security.com</p>
                 </div>
             </div>
     	</div>
@@ -238,6 +241,5 @@
             <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-	
 </body>
 </html>
