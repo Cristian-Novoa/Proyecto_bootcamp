@@ -24,9 +24,6 @@
         	<a href="/logout" class = "btn btn-danger">Cerrar sesion</a>
         </div>
     </header>
-    <div>
-    <h1 class = "main-title">Tu seguridad esta con nosotros </h1>
-    </div>
     <section class="middle-content">
     	<div class="slider-box">
     		<ul>
