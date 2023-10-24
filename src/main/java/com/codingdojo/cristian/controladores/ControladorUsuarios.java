@@ -1,5 +1,7 @@
 package com.codingdojo.cristian.controladores;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,12 +9,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.codingdojo.cristian.modelos.Comuna;
+import com.codingdojo.cristian.modelos.Ubicacion;
 import com.codingdojo.cristian.modelos.Usuario;
+import com.codingdojo.cristian.servicios.ServicioUbicaciones;
 import com.codingdojo.cristian.servicios.ServicioUsuarios;
 
 import jakarta.servlet.http.HttpSession;
@@ -24,6 +26,9 @@ public class ControladorUsuarios {
 	@Autowired
 	private ServicioUsuarios servicio;
 	
+	@Autowired
+	private ServicioUbicaciones sUbi;
+	
 	@GetMapping("/")
 	public String index(@ModelAttribute("nuevoUsuario")Usuario nuevoUsuario) {
 		
@@ -31,7 +36,7 @@ public class ControladorUsuarios {
 	}
 	
 	@GetMapping("/dashboard")
-	public String dashboard(HttpSession session) {
+	public String dashboard(HttpSession session, Model model) {
 		//Revisamos que el usuario haya iniciado sesion
 		
 		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
@@ -39,6 +44,9 @@ public class ControladorUsuarios {
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
+		
+		List<Ubicacion> listaUbicaciones = sUbi.listaUbicaciones();
+		model.addAttribute("ubicaciones", listaUbicaciones);
 		
 		return "dashboard.jsp";
 	}
