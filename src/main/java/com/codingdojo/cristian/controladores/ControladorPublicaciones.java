@@ -1,7 +1,5 @@
 package com.codingdojo.cristian.controladores;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.codingdojo.cristian.modelos.Mensaje;
 import com.codingdojo.cristian.modelos.Publicacion;
+import com.codingdojo.cristian.modelos.Ubicacion;
 import com.codingdojo.cristian.modelos.Usuario;
 import com.codingdojo.cristian.servicios.ServicioMensajes;
 import com.codingdojo.cristian.servicios.ServicioPublicaciones;
+import com.codingdojo.cristian.servicios.ServicioUbicaciones;
 import com.codingdojo.cristian.servicios.ServicioUsuarios;
 
 import jakarta.servlet.http.HttpSession;
@@ -33,6 +33,9 @@ public class ControladorPublicaciones {
 	@Autowired
 	private ServicioPublicaciones sP;
 	
+	@Autowired
+	private ServicioUbicaciones sUbi;
+	
 	
 	@Autowired
 	private ServicioMensajes sM;
@@ -45,7 +48,8 @@ public class ControladorPublicaciones {
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
-		
+		List<Ubicacion> listaUbicaciones = sUbi.listaUbicaciones();
+		model.addAttribute("ubicaciones", listaUbicaciones);
 		
 		List<Publicacion> listaPublicaciones = sP.allPublicaciones();
 		model.addAttribute("publicaciones", listaPublicaciones);
@@ -55,13 +59,18 @@ public class ControladorPublicaciones {
 	}
 	
 	@GetMapping("/nueva")
-	public String nueva(@ModelAttribute("nuevaPublicacion")Publicacion nuevaPublicacion,HttpSession session ){
+	public String nueva(@ModelAttribute("nuevaPublicacion")Publicacion nuevaPublicacion,HttpSession session, Model model ){
 		
 		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
 		
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
+		List<Ubicacion> listaUbicaciones = sUbi.listaUbicaciones();
+		model.addAttribute("ubicaciones", listaUbicaciones);
+		
+		List<Publicacion> listaPublicaciones = sP.allPublicaciones();
+		model.addAttribute("publicaciones", listaPublicaciones);
 		
 		
 		return "nuevaPublicacion.jsp";
@@ -100,6 +109,10 @@ public class ControladorPublicaciones {
 		if(tempUsuario == null) {
 			return "redirect:/";
 		}
+		
+		List<Ubicacion> listaUbicaciones = sUbi.listaUbicaciones();
+		model.addAttribute("ubicaciones", listaUbicaciones);
+		
 		
 		List<Mensaje> listaMensajes = sM.listaMensajes();
 		model.addAttribute("mensajes", listaMensajes);

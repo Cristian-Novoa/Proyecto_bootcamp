@@ -81,6 +81,22 @@ body{
 	color: #000;
 }
 
+.encabezado .comuna-user{
+	margin-top: 20px;
+	display: flex;
+	color: #fff;
+}
+
+.encabezado .comuna-user .icon-ubi .bx{
+	line-height: 20px;
+	padding: 10px;
+}
+
+.encabezado .comuna-user .content-ubi{
+	
+	padding: 10px;
+}
+
 /*Seccion del formulario nuevo post*/
 
 .container-fluid{

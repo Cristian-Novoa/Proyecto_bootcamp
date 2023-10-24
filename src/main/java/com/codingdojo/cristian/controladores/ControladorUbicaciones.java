@@ -65,25 +65,6 @@ public class ControladorUbicaciones {
 		
 	}
 	
-	@GetMapping("/editar/{id}")
-	public String editar(@PathVariable("id") Long id,
-						 @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,
-						 HttpSession session,
-						 Model model) {
-		//Revisamos que el usuario haya iniciado sesion
-		
-		Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
-		
-		if(tempUsuario == null) {
-			return "redirect:/";
-	}
-	
-		Usuario usuarioAEditar = servicio.encontrarUsuario(id);
-		
-		model.addAttribute(usuarioAEditar);
-		return "editar.jsp";
-	}
-	
 	@PostMapping("/nuevaubicacion")
 	public String nuevaubicacion(@Valid @ModelAttribute("nuevaUbicacion")Ubicacion nuevaUbicacion, HttpSession session, Model model,
 			BindingResult result) {
@@ -103,25 +84,6 @@ public class ControladorUbicaciones {
 		}else {
 			
 			sUbi.guardarUbicacion(nuevaUbicacion);
-			return "redirect:/perfil";
-		}
-	}
-	
-	@PutMapping("/actualizar")
-	public String update(HttpSession session,
-						 @Valid @ModelAttribute("nuevaDireccion")Ubicacion nuevaDireccion,Model model,
-						 BindingResult result) {
-		
-		
-				Usuario tempUsuario = (Usuario)session.getAttribute("usuarioEnSesion");
-				model.addAttribute("comunas",Comuna.comunas);
-				if(tempUsuario == null) {
-					return "redirect:/";
-			}
-		if(result.hasErrors()) {
-			return "editar.jsp";
-		} else {
-			
 			return "redirect:/perfil";
 		}
 	}

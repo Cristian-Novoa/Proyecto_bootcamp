@@ -15,6 +15,20 @@
 <body>
 	<header class="encabezado">
         <a href="/dashboard" class = "logo"><img alt="icono" src="/img/icon_home.png"></a>
+        <div class = "comuna-user">
+        	<div class = "icon-ubi">
+        		<i class='bx bx-map-pin bx-sm'></i>
+        	</div>
+        	<div class = "content-ubi">
+        		<p>
+    			<c:forEach items = "${ubicaciones}" var = "ubicacion">
+    				<c:if test = "${ubicacion.usuario.id == usuarioEnSesion.id}">
+    					${ubicacion.comuna} <span>${ubicacion.calle}</span>
+    				</c:if>
+    			</c:forEach>
+    		</p>
+        	</div>
+        </div>
         <nav class="navbarra">
             <a href="/dashboard">Inicio</a>
             <a href="/foro">Comunidad</a>
