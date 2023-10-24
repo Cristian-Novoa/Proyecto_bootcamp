@@ -42,28 +42,28 @@
     	<div class="slider-box">
     		<ul>
     			<li>
-    				<img src="img/s1.jpg">
+    				<img src="img/1.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s2.jpg">
+    				<img src="img/2.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s3.jpg">
+    				<img src="img/3.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
     				</div>
     			</li>
     			<li>
-    				<img src="img/s4.jpg">
+    				<img src="img/4.png">
     				<div class="texto">
     					<h2></h2>
     					<p> </p>
@@ -92,43 +92,6 @@
             </div>
     </section>
     <section class="topcontent">
-    <div >
-        <div >
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row sy-hidde">
-                            <div class="col-12">
-                                <hr>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <div data-aos="fade-up" class="principal_text aos-init">
-                                    <h3>No hacemos consultoria tradicional.</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-between mt-5">
-                            <div class="col-12 col-md-5">
-                                <div data-aos="fade-up" class="principal_text aos-init">
-                                    <p>Somos una consultora estrategica que ayuda a lideres de
-                                        industria a acelerar y construir hoy su maï¿½ana, gracias
-                                        a nuestra capacidad integrada de tecnologia, diseno y
-                                        vision de negocio. Generamos saltos de valor concretos
-                                        con soluciones end to end de alto impacto, medibles y
-                                        siempre conectados con las necesidades profundas del
-                                        usuario.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-5 bg-offset">
-                                <img src="https://www.bbk2brains.com/hubfs/home-2023/photo-1.jpg" alt="">
-                            </div>
-                        </div>
-                  </div>
-                         
-                </div>  
-            </div>                     
-        </div>
-    </div>
     </section>
     <div class="num-emergency">
     	<h2>Numeros de emergencia</h2>
@@ -160,7 +123,7 @@
     	<div class="cardco1">
     	<div class="card">
     		<figure>
-    			<img src="img/8ï¿½ regiï¿½n.png">
+    			<img src="img/8° región.png">
     		</figure>
     		<div class="contenido">
     			<h3>Ubicacion</h3>
@@ -198,7 +161,7 @@
             </figure>
             <div class="contenido">
                 <h3>Ofrecemos</h3>
-                <p>Uniï¿½n Comunitaria: Fomentamos la colaboraciï¿½n y la interacciï¿½n entre los..<br>Recursos de Seguridad: Proporcionamos herramientas y asesoramiento que te... <br>Iniciativas Comunitarias: Organizamos proyectos y eventos que promueven un.... <br></p>
+                <p>Unión Comunitaria: Fomentamos la colaboración y la interacción entre los..<br>Recursos de Seguridad: Proporcionamos herramientas y asesoramiento que te... <br>Iniciativas Comunitarias: Organizamos proyectos y eventos que promueven un.... <br></p>
                    <a href="#">ver mas</a>
             </div>
         </div>
@@ -208,7 +171,7 @@
             </figure>
             <div class="contenido">
                 <h3>Capacitaciones</h3>
-                <p>Inscribete a nuestra formaciï¿½n especializada en seguridad para que estï¿½s mejor preparado ante situaciones de riesgo. <br> Tales como: <br>Prevenciï¿½n de Robos y Asaltos - Primeros Auxilios y RCP - Seguridad Cibernï¿½tica...
+                <p>Inscribete a nuestra formación especializada en seguridad para que estés mejor preparado ante situaciones de riesgo. <br> Tales como: <br>Prevención de Robos y Asaltos - Primeros Auxilios y RCP - Seguridad Cibernética...
                 </p>
                    <a href="#">ver mas</a>
             </div>
@@ -219,11 +182,10 @@
             </figure>
             <div class="contenido">
                 <h3>Unete a nosotros</h3>
-                <p>Si deseas vivir en un entorno mï¿½s seguro y sentirte respaldado por tu comunidad, Us es la respuesta. ï¿½nete a nosotros y descubre cï¿½mo podemos transformar tu vecindario en un lugar donde la seguridad y la uniï¿½n son una realidad. ï¿½Contï¿½ctanos hoy y dï¿½janos ayudarte a construir un futuro mï¿½s seguro para ti y tus vecinos!</p>
+                <p>Si deseas vivir en un entorno más seguro y sentirte respaldado por tu comunidad, Us es la respuesta. Únete a nosotros y descubre cómo podemos transformar tu vecindario en un lugar donde la seguridad y la unión son una realidad. ¡Contáctanos hoy y déjanos ayudarte a construir un futuro más seguro para ti y tus vecinos!</p>
                    <a href="#">ver mas</a>
             </div>
         </div>
-      </div>
     </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
@@ -236,15 +198,18 @@
     		</div>
     		<div class = "box">
     			<h2>SOBRE NOSOTROS</h2>
-    			<p></p>
-    			<p>Nuestra misiï¿½n es unir comunidades, promover seguridad y comunicaciï¿½n, fortalecer la colaboraciï¿½n vecinal y prevenir la delincuencia.</p>
+    			<p>
+    			Nuestra misión es unir comunidades, promover seguridad y comunicación, fortalecer la colaboración vecinal 
+    			y prevenir la delincuencia. 
+    			</p>
     		</div>
     		<div class = "box">
-                <h2>SIGUENOS</h2>
+                <h2>CONTACTANOS</h2>
                 <div class="red-social">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <p>todosjuntos@us.security.com</p>
                 </div>
             </div>
     	</div>
@@ -252,6 +217,5 @@
             <small>&copy; 2023 <b>US</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-	
 </body>
 </html>
