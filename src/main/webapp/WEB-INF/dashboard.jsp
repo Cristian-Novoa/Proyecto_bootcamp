@@ -78,43 +78,6 @@
             </div>
     </section>
     <section class="topcontent">
-    <div >
-        <!--<div >
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row sy-hidde">
-                            <div class="col-12">
-                                <hr>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <div data-aos="fade-up" class="principal_text aos-init">
-                                    <h3>No hacemos consultoria tradicional.</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-between mt-5">
-                            <div class="col-12 col-md-5">
-                                <div data-aos="fade-up" class="principal_text aos-init">
-                                    <p>Somos una consultora estrategica que ayuda a lideres de
-                                        industria a acelerar y construir hoy su mañana, gracias
-                                        a nuestra capacidad integrada de tecnologia, diseno y
-                                        vision de negocio. Generamos saltos de valor concretos
-                                        con soluciones end to end de alto impacto, medibles y
-                                        siempre conectados con las necesidades profundas del
-                                        usuario.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-5 bg-offset">
-                                <img src="https://www.bbk2brains.com/hubfs/home-2023/photo-1.jpg" alt="">
-                            </div>
-                        </div>
-                  </div>
-                         
-                </div>  
-            </div>                     
-        </div>!-->
-    </div>
     </section>
     <div class="num-emergency">
     	<h2>Numeros de emergencia</h2>
@@ -150,7 +113,7 @@
     		</figure>
     		<div class="contenido">
     			<h3>Ubicacion</h3>
-    			<p>La Octava Region se encuentra en la zona centro-sur de Chile, limitando al norte con la Region del Maule, al sur con la Region de La Araucania, al este con la Region de Nuble y al oeste con el oceano Pacifico. La capital de la Region del Biobío es la ciudad de Concepcion, que es la segunda ciudad mas grande de Chile y un importante centro industrial y comercial.</p>
+    			<p>La Octava Region se encuentra en la zona centro-sur de Chile, limitando al norte con la Region del Maule, al sur con la Region de La Araucania, al este con la Region de Nuble y al oeste con el oceano Pacifico. La capital de la Region del Biobï¿½o es la ciudad de Concepcion, que es la segunda ciudad mas grande de Chile y un importante centro industrial y comercial.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -160,7 +123,7 @@
     		</figure>
     		<div class="contenido">
     			<h3>Cultura</h3>
-    			<p>La Octava Region tiene una rica tradición cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
+    			<p>La Octava Region tiene una rica tradiciï¿½n cultural, con influencias indigenas y espanolas. La musica y la danza folclorica son parte integral de la cultura local. La region ofrece una gran variedad de destinos turisticos, incluyendo playas, parques nacionales, rios y lagos. Algunos lugares destacados son el Parque Nacional Nahuelbuta, la ciudad costera de Tome, y las termas de Chillan.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -170,7 +133,7 @@
     		</figure>
     		<div class="contenido">
     			<h3>Historia</h3>
-    			<p> La Octava Region tiene una rica historia, que incluye la presencia de pueblos indigenas como los mapuches. Durante la colonización española, la región fue escenario de conflictos y expediciones. Mas recientemente, la region ha tenido un papel importante en la historia de Chile, incluyendo la independencia del pais y el terremoto de 2010.</p>
+    			<p> La Octava Region tiene una rica historia, que incluye la presencia de pueblos indigenas como los mapuches. Durante la colonizaciï¿½n espaï¿½ola, la regiï¿½n fue escenario de conflictos y expediciones. Mas recientemente, la region ha tenido un papel importante en la historia de Chile, incluyendo la independencia del pais y el terremoto de 2010.</p>
     			   <a href="#">ver mas</a>
     		</div>
     	</div>
@@ -209,7 +172,6 @@
                    <a href="#">ver mas</a>
             </div>
         </div>
-      </div>
     </section>
     <footer class = "pie-pagina">
         <div class = "grupo-1">
