@@ -232,11 +232,12 @@ bio-bio-1 {
 	display: flex;
 	justify-content: center;
 	padding: 15px;
-	margin-top: -193px;
 }
+
 .contact-emergency {
 	display: flex;
 	justify-content:space-evenly;
+	margin-top: -193px;
 }
 
 .img-contact {
