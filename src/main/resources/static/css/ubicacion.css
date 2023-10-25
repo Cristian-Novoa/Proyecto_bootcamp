@@ -37,7 +37,7 @@
 .navbarra a{
     position: relative;
     font-size: 18px;
-    color: #000 !important;
+    color: #fff !important;
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
@@ -50,7 +50,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: black;
+    background: #fff;
     transition: 0.3s;
 }
 
@@ -74,6 +74,22 @@
 	border-color:  #f52c02;
 	transition: 0.6s ease;
 	color: #000;
+}
+
+.encabezado .comuna-user{
+	margin-top: 20px;
+	display: flex;
+	color: #fff;
+}
+
+.encabezado .comuna-user .icon-ubi .bx{
+	line-height: 20px;
+	padding: 10px;
+}
+
+.encabezado .comuna-user .content-ubi{
+	
+	padding: 10px;
 }
 
 /*Seccion Formulario*/
